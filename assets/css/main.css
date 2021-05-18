@@ -1,3 +1,4 @@
+@import '../resets/normalize.css';
 @import '../fonts/fonts.css';
 
 :root {
@@ -21,4 +22,55 @@
 
 * {
     font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: var(--white, white);
+    color: var(--black, black);
+}
+
+.page-box {
+    max-width: 1440px;
+}
+
+.header__title, .footer__title, .footer_info {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.header {
+    padding: 96px 160px 77px 160px;
+}
+
+.header__title {
+    font-size: 50px;
+    line-height: 64px;
+    margin: 0;
+}
+
+.main {
+    height: 1036px;
+    background: #F9FAFC;
+}
+
+.footer {
+    text-align: center;
+    height: 272px;
+    padding: 56px 0;
+}
+
+.footer__title {
+    font-size: 38px;
+    line-height: 48px;
+}
+
+.footer_info {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    width: 45%;
+    margin: auto;
 }

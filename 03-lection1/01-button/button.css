@@ -1,1 +1,106 @@
 /* Стилизация кнопки */
+
+html {
+    background: #F9FAFC;
+}
+body {
+    position: relative;
+    width: 1440px;
+    height: 451px;
+    background: var(--white, white)
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 100px;
+}
+
+.card__title, .card__button-group-label {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.card__title {
+    font-size: 38px;
+    line-height: 46px;
+    color: var(--black, #212429);
+}
+
+.card__button-group-label {
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--grey-3, #ACB5BD);
+}
+
+.button {
+    width: 189px;
+    height: 48px;
+    border-radius: 8px;
+    border: none;
+    cursor: grab;
+    color: var(--white, white);
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.card__button:active {
+    color: var(--grey-2, #DDE2E5);
+}
+
+.card__button:hover {
+    cursor: pointer;
+}
+
+.card__button:disabled, .card__button[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.card__button.-primary {
+    background: var(--blue, #374FC7);
+}
+
+.card__button.-primary:hover, .card__button.-primary_hover {
+    background: #2342C0;
+}
+
+.card__button.-secondary {
+    background: var(--purple, #7048E8);
+}
+
+.card__button.-secondary:hover, .card__button.-secondary_hover {
+    background: #5028C6;
+}
+
+.card__button.-alternate {
+    border: 1px solid var(--grey-3, #ACB5BD);
+    box-sizing: border-box;
+    color: var(--grey-4, #495057);
+    background-color: var(--white, white);
+}
+
+.card__button.-alternate:hover, .card__button.-alternate_hover {
+    border-color: var(--black, #212429);
+}
+
+.card__button.-alternate:active {
+    color: var(--grey-2, #DDE2E5);
+}
+
+.card__button-grid {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 16px 33px;
+}
