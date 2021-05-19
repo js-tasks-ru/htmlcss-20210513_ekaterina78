@@ -2,17 +2,41 @@
 <!-- Страница с аккордеоном -->
 <html lang="ru">
     <head>
+        <title>Accordion</title>
+        <meta charset="utf-8">
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./accordion.css">
     </head>
     <body>
-        <details>
-            <summary>
-                Accordion item
-            </summary>
-            <p>
-                Hidden content
-            </p>
-        </details>
+        <div class="card">
+            <h3 class="card__title">Accordion</h3>
+            <div class="card__content">
+                <div class="accordion">
+                    <details class="accordion__details">
+                        <summary class="accordion__summary">
+                            Accordion item 1
+                            <img class="accordion__arrow" src="../../assets/images/accordion-arrow.svg" alt="arrow">
+                        </summary>
+                        <p class="accordion__content">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    </details>
+
+                    <details class="accordion__details">
+                        <summary class="accordion__summary">
+                            Accordion item 2
+                            <img class="accordion__arrow" src="../../assets/images/accordion-arrow.svg" alt="arrow">
+                        </summary>
+                        <p class="accordion__content">Wichtige Informationen werden definitiv nicht scheitern Schulbezirk ist jede Firma tun, was sie sind. Outdoor Services Fotografie Film für Außendusche. US-Ingenieure und Ingenieure sind unser Lieferant.</p>
+                    </details>
+
+                    <details class="accordion__details">
+                        <summary class="accordion__summary">
+                            Accordion item 3
+                            <img class="accordion__arrow" src="../../assets/images/accordion-arrow.svg" alt="arrow">
+                        </summary>
+                        <p class="accordion__content">Tärkeää tietoa varmasti ei onnistu koulupiirin on tahansa yritys tehdä toimittajan he ovat. Outdoor services valokuvausfilmi ulkosuihkuun. Yhdysvaltain insinöörit ja valokuvaus ovat toimittajamme.</p>
+                    </details>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

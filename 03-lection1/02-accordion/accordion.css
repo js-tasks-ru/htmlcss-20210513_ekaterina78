@@ -1,1 +1,76 @@
 /* Стилизация аккордеона */
+html {
+    background: #F9FAFC;
+}
+body {
+    position: relative;
+    max-width: 1440px;
+    width: 100%;
+    height: fit-content;
+    background: var(--white, white)
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 100px;
+    min-width: 250px;
+}
+
+.card__title, .accordion__summary, .accordion__content {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    color: var(--black, #212429);
+}
+
+.card__title {
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 46px;
+}
+
+.card__content {
+    min-width: 150px;
+    width: 70%;
+}
+
+.accordion__summary::-webkit-details-marker {  /* нестандартный псевдоэлемент Google Chrome */
+    display: none;
+}
+
+.accordion__details {
+    border: 1px solid var(--grey-3);
+    border-radius: 8px;
+    transition: height 0.2s ease-in-out;
+    margin-bottom: 8px;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.accordion__details[open] {
+    height: fit-content;
+}
+
+.accordion__details[open] .accordion__summary .accordion__arrow {
+    transform: rotate(-180deg);
+}
+
+.accordion__details:last-child {
+    margin-bottom: 0;
+}
+
+.accordion__summary {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    align-items: center;
+    margin: 32px 24px;
+}
+
+.accordion__content {
+    padding: 0 32px 32px 32px;
+}
