@@ -1,48 +1,7 @@
 /* Стилизация аккордеона */
-html {
-    background: #F9FAFC;
-}
-body {
-    position: relative;
-    max-width: 1440px;
-    width: 100%;
-    height: fit-content;
-    background: var(--white, white)
-}
-
-.card {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 100px;
-    min-width: 250px;
-}
-
-.card__title, .accordion__summary, .accordion__content {
-    font-family: Inter, sans-serif;
-    font-style: normal;
-    color: var(--black, #212429);
-}
-
-.card__title {
-    font-weight: 500;
-    font-size: 38px;
-    line-height: 46px;
-}
-
-.card__content {
-    min-width: 150px;
-    width: 70%;
-}
-
-.accordion__summary::-webkit-details-marker {  /* нестандартный псевдоэлемент Google Chrome */
-    display: none;
-}
-
 .accordion__details {
     border: 1px solid var(--grey-3);
     border-radius: 8px;
-    transition: height 0.2s ease-in-out;
     margin-bottom: 8px;
     align-items: center;
     font-weight: 400;
@@ -54,12 +13,30 @@ body {
     height: fit-content;
 }
 
+.accordion__details[open] .accordion__summary ~ p {
+    animation: emerge .5s ease-in-out;
+}
+@keyframes emerge {
+    0%    {opacity: 0;}
+    100%  {opacity: 1;}
+}
+
 .accordion__details[open] .accordion__summary .accordion__arrow {
     transform: rotate(-180deg);
 }
 
 .accordion__details:last-child {
     margin-bottom: 0;
+}
+
+.accordion__summary, .accordion__content {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    color: var(--black, #212429);
+}
+
+.accordion__summary::-webkit-details-marker {  /* нестандартный псевдоэлемент Google Chrome */
+    display: none;
 }
 
 .accordion__summary {
