@@ -1,4 +1,8 @@
+@import '../resets/normalize.css';
 @import '../fonts/fonts.css';
+@import '../../components/header/header.css';
+@import '../../components/main/main.css';
+@import '../../components/footer/footer.css';
 
 :root {
     --white: #ffffff;
@@ -21,4 +25,15 @@
 
 * {
     font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: var(--white);
+    color: var(--black);
+}
+
+.container {
+    max-width: 1440px;
 }
