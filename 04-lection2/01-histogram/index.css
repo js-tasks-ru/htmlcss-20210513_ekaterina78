@@ -1,34 +1,33 @@
 html {
     background: #F9FAFC;
 }
+
 body {
     position: relative;
+    max-width: 1440px;
     width: 100%;
-    height: 451px;
+    height: fit-content;
     background: var(--white)
 }
 
-.button-card {
+.histogram-card {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 100px;
+    min-width: 250px;
 }
 
-.button-card__title {
+.histogram-card__title {
     font-family: Inter, sans-serif;
     font-style: normal;
+    color: var(--black);
     font-weight: 500;
     font-size: 38px;
     line-height: 46px;
-    color: var(--black);
 }
 
-.button-card__content {
+.histogram-card__content {
     width: 70%;
-    min-width: 300px;
-    display: grid;
-    grid-template-columns: 16% repeat(3, 28%);
-    grid-template-rows: repeat(2, 75px);
-    grid-gap: 16px 33px;
+    min-width: 150px;
 }
