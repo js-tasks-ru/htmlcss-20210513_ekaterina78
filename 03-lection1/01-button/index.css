@@ -28,7 +28,7 @@ body {
     width: 70%;
     min-width: 300px;
     display: grid;
-    grid-template-columns: 16% repeat(3, 28%);
+    grid-template-columns: 75px repeat(3, minmax(100px, 25%));
     grid-template-rows: repeat(2, 75px);
     grid-gap: 16px 33px;
 }
