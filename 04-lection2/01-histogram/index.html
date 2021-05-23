@@ -2,10 +2,37 @@
 <!-- Страница с гистограммой -->
 <html lang="ru">
     <head>
+        <title>Histogram</title>
+        <meta charset="utf-8">
         <link rel="stylesheet" href="../../assets/css/main.css">
+        <link rel="stylesheet" href="./index.css">
         <link rel="stylesheet" href="./histogram.css">
     </head>
     <body>
+        <div class="histogram-card">
+            <h3 class="histogram-card__title">Histogram</h3>
+            <div class="histogram-card__content">
+                <div class="hist">
+                    <div class="hist__header-row">
+                        <h1 class="hist__title">Total orders</h1>
+                        <a href="" class="hist__link">View all</a>
+                    </div>
+                    <h4 class="hist__orders">50254</h4>
+                    <div class="hist__bars" id="hist__bars">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            const barsCount = Math.floor(Math.random() * 51);
+            for(let i = 0; i < barsCount; i++) {
+                const bar = document.createElement('div');
+                bar.className = 'hist__bar';
+                bar.style.height = Math.floor(Math.random() * 101) + '%';
+                document.getElementById('hist__bars').appendChild(bar);
+            }
+        </script>
 
     </body>
 </html>
