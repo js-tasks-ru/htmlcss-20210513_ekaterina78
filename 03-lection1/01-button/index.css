@@ -8,14 +8,14 @@ body {
     background: var(--white)
 }
 
-.card {
+.button-card {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 100px;
 }
 
-.card__title {
+.button-card__title {
     font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -24,7 +24,7 @@ body {
     color: var(--black);
 }
 
-.card__content {
+.button-card__content {
     width: 70%;
     min-width: 300px;
     display: grid;
