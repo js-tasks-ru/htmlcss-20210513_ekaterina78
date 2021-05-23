@@ -1,0 +1,16 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    background: var(--white);
+    color: var(--black);
+}
+
+.page__box {
+    max-width: 1440px;
+    padding-right: 150px;
+    padding-left: 150px;
+}
+
+.page__main {
+    background: var(--bg);
+}

@@ -1,0 +1,26 @@
+.preview-flex {
+    padding-top: 68px;
+    padding-bottom: 92px;
+}
+
+.preview-flex__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+
+}
+
+.preview-flex__card {
+    flex: 1 1 calc((100% / 3) - 2rem);
+    background: var(--white);
+    box-shadow: 0 2px 4px rgba(33, 36, 41, 0.05);
+    border-radius: 12px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.preview-flex__link {
+    text-decoration: none;
+}

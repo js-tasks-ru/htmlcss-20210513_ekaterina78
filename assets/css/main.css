@@ -1,7 +1,10 @@
 @import '../../node_modules/normalize.css/normalize.css';
 @import '../fonts/fonts.css';
 @import '../../components/header/header.css';
-@import '../../components/main/main.css';
+@import '../../components/page/page.css';
+@import '../../components/card/card.css';
+@import '../../components/preview-flex/preview-flex.css';
+@import '../../components/histogram/histogram.css';
 @import '../../components/footer/footer.css';
 
 :root {
@@ -15,9 +18,12 @@
     --grey-2: #DDE2E5;
     --grey-3: #ACB5BD;
     --grey-4: #495057;
+    --grey-5: #F9FAFC;
 
     --error: var(--red);
     --success: var(--blue);
+
+    --bg: var(--grey-5);
 
     --primary-h: 228;
     --primary-s: 81%;
@@ -34,15 +40,4 @@
 
 * {
     font-family: 'Roboto', sans-serif;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    background: var(--white);
-    color: var(--black);
-}
-
-.container {
-    max-width: 1440px;
 }
