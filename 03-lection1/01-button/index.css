@@ -3,19 +3,19 @@ html {
 }
 body {
     position: relative;
-    width: 1440px;
+    width: 100%;
     height: 451px;
     background: var(--white)
 }
 
-.card {
+.button-card {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 100px;
 }
 
-.card__title {
+.button-card__title {
     font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -24,9 +24,11 @@ body {
     color: var(--black);
 }
 
-.card__content {
+.button-card__content {
+    width: 70%;
+    min-width: 300px;
     display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 75px repeat(3, minmax(100px, auto));
+    grid-template-rows: repeat(2, 75px);
     grid-gap: 16px 33px;
 }

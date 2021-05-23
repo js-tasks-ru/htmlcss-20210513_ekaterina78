@@ -6,24 +6,117 @@
         <title>Component Library Project</title>
         <link rel="stylesheet" href="./assets/css/main.css">
     </head>
-    <body>
+    <body class="page">
+
         <header class="header">
-            <div class="container">
+            <div class="page__box header__container">
+               <div class="header__logo">
+                   <img src="assets/images/logo.svg" alt="logotype">
+               </div>
+                <nav class="header__nav">
+                    <a href="" class="header__nav-link">Components</a>
+                    <a href="" class="header__nav-link">About</a>
+                    <a href="" class="header__nav-link">Contact</a>
+                </nav>
+            </div>
+            <div class="page__box">
                 <h1 class="header__title">Reusable component library</h1>
             </div>
-
         </header>
 
-        <main class="main">
-            <div class="container"></div>
+        <main class="page__main">
+            <div class="page__box preview-flex">
+                <div class="preview-flex__container">
+                    <div class="preview-flex__card">
+                        <a href="" class="preview-flex__link">
+                            <div class="card">
+                                <div class="card__content">
+                                    <div class="tooltip">
+                                        <p style="color: black">Coming soon...</p>
+                                    </div>
+                                </div>
+                                <h3 class="card__title">Tooltip</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="preview-flex__card">
+                        <a href="" class="preview-flex__link">
+                            <div class="card">
+                                <div class="card__content">
+                                    <div>
+                                        <p style="color: black">Coming soon...</p>
+                                    </div>
+                                </div>
+                                <h3 class="card__title">Custom form elements</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="preview-flex__card">
+                        <a href="" class="preview-flex__link">
+                            <div class="card">
+                                <div class="card__content">
+                                    <div>
+                                        <p style="color: black">Coming soon...</p>
+                                    </div>
+                                </div>
+                                <h3 class="card__title">Calendar</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="preview-flex__card">
+                        <a href="" class="preview-flex__link">
+                            <div class="card">
+                                <div class="card__content">
+                                    <div>
+                                        <p style="color: black">Coming soon...</p>
+                                    </div>
+                                </div>
+                                <h3 class="card__title">Modal dialog</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="preview-flex__card">
+                        <a href="" class="preview-flex__link">
+                            <div class="card">
+                                <div class="card__content">
+                                    <div class="histogram">
+                                        <div class="histogram__header-row">
+                                            <h1 class="histogram__header">Total orders</h1>
+                                            <a href="" class="histogram__link">View all</a>
+                                        </div>
+                                        <h4 class="histogram__orders">50254</h4>
+                                        <div class="histogram__bars" id="histogram__bars"></div>
+                                    </div>
+                                </div>
+                                <h3 class="card__title">Histogram</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="preview-flex__card">
+                        <a href="" class="preview-flex__link">
+                            <div class="card">
+                                <div class="card__content">
+                                    <div class="avatar">
+                                        <p style="color: black">Coming soon...</p>
+                                    </div>
+                                </div>
+                                <h3 class="card__title">Avatar</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </main>
 
         <footer class="footer">
-            <div class="container">
+            <div class="page__box">
                 <h2 class="footer__title">About</h2>
                 <p class="footer__info">This project is a collection of professionally designed, pre-built, fully responsive HTML snippets you can drop into your projects. Get started by checking out our free preview components, or browsing the PNG previews in the categories you're most curious about.</p>
             </div>
         </footer>
+
+
+        <script src="04-lection2/01-histogram/histogram.js"></script>
 
     </body>
 </html>

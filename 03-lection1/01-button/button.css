@@ -1,11 +1,12 @@
 /* Стилизация кнопки */
 
 .button {
-    width: 189px;
+    min-width: 70px;
+    display: inline-block;
     height: 48px;
     border-radius: 8px;
     border: none;
-    cursor: grab;
+    cursor: pointer;
     color: var(--white);
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 
@@ -15,6 +16,10 @@
     font-size: 16px;
     line-height: 19px;
     text-align: center;
+}
+
+.button_full-width {
+    width: 100%
 }
 
 .button-group-label {
@@ -42,19 +47,19 @@
 }
 
 .button_primary {
-    background: var(--blue);
+    background: var(--primary);
 }
 
-.button_primary:hover, .button_primary_hover {
-    background: #2342C0;
+.button_primary:hover {
+    background: var(--primary-darken);
 }
 
 .button_secondary {
-    background: var(--purple);
+    background: var(--secondary);
 }
 
-.button_secondary:hover, .button_secondary_hover {
-    background: #5028C6;
+.button_secondary:hover {
+    background: var(--secondary-darken);
 }
 
 .button_alternate {
@@ -64,7 +69,7 @@
     background-color: var(--white);
 }
 
-.button_alternate:hover, .button_alternate_hover {
+.button_alternate:hover {
     border-color: var(--black);
 }
 

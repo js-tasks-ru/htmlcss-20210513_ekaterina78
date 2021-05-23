@@ -1,0 +1,21 @@
+.card {
+    height: 367px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 25px;
+}
+
+.card__content {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.card__title {
+    margin: 40px 0 0 0;
+    color: var(--black);
+}

@@ -1,15 +1,16 @@
 html {
     background: #F9FAFC;
 }
+
 body {
     position: relative;
     max-width: 1440px;
     width: 100%;
     height: fit-content;
-    background: var(--white, white)
+    background: var(--white)
 }
 
-.accordion-card {
+.histogram-card {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -17,16 +18,16 @@ body {
     min-width: 250px;
 }
 
-.accordion-card__title {
+.histogram-card__title {
     font-family: Inter, sans-serif;
     font-style: normal;
-    color: var(--black, #212429);
+    color: var(--black);
     font-weight: 500;
     font-size: 38px;
     line-height: 46px;
 }
 
-.accordion-card__content {
-    min-width: 150px;
+.histogram-card__content {
     width: 70%;
+    min-width: 150px;
 }

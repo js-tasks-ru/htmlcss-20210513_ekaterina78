@@ -2,10 +2,29 @@
 <!-- Страница с гистограммой -->
 <html lang="ru">
     <head>
+        <title>Histogram</title>
+        <meta charset="utf-8">
         <link rel="stylesheet" href="../../assets/css/main.css">
+        <link rel="stylesheet" href="./index.css">
         <link rel="stylesheet" href="./histogram.css">
     </head>
     <body>
+        <div class="histogram-card">
+            <h3 class="histogram-card__title">Histogram</h3>
+            <div class="histogram-card__content">
+                <div class="histogram">
+                    <div class="histogram__header-row">
+                        <h1 class="histogram__header">Total orders</h1>
+                        <a href="" class="histogram__link">View all</a>
+                    </div>
+                    <h4 class="histogram__orders">50254</h4>
+                    <div class="histogram__bars" id="histogram__bars">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./histogram.js"></script>
 
     </body>
 </html>
