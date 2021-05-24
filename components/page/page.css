@@ -3,12 +3,13 @@
     flex-direction: column;
     background: var(--white);
     color: var(--black);
+    min-width: 250px;
 }
 
 .page__box {
-    max-width: 1440px;
-    padding-right: 150px;
-    padding-left: 150px;
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .page__main {

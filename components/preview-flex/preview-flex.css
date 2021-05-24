@@ -1,6 +1,6 @@
 .preview-flex {
     padding-top: 68px;
-    padding-bottom: 92px;
+    padding-bottom: 64px;
 }
 
 .preview-flex__container {
@@ -9,11 +9,10 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 0 -15px;
-
 }
 
 .preview-flex__card {
-    flex: 1 1 calc((100% / 3) - 2rem);
+    flex: 1 1 calc((100% / 3) - 30px);
     background: var(--white);
     box-shadow: 0 2px 4px rgba(33, 36, 41, 0.05);
     border-radius: 12px;
