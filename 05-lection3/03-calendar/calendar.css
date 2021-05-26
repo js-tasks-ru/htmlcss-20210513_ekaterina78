@@ -25,6 +25,10 @@
     grid-template-columns: repeat(7, 1fr);
 }
 
+.calendar__first-item {
+    grid-column-start: 5;
+}
+
 .calendar__title {
     font-family: Inter, sans-serif;
     font-style: normal;
