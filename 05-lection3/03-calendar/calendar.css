@@ -5,13 +5,14 @@
     background: var(--white);
     display: flex;
     flex-direction: column;
-    align-items: center;
+    box-sizing: border-box;
+    padding: 7%;
+    gap: 24px;
 }
 
 .calendar__wrapper {
     position: relative;
     padding-bottom: 100%;
-    width: 100%;
 }
 
 .calendar__inner {
@@ -20,12 +21,11 @@
     left: 0;
     bottom: 0;
     right: 0;
-    padding: 8%;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
 }
 
-.calendar__first-item {
+.calendar__first-day {
     grid-column-start: 5;
 }
 
@@ -36,7 +36,7 @@
     font-size: 20px;
     line-height: 24px;
     color: var(--grey-6);
-    padding-top: 7%;
+    text-align: center;
 }
 
 .calendar__item {
