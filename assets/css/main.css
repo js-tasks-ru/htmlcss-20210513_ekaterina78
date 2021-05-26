@@ -5,6 +5,7 @@
 @import '../../components/card/card.css';
 @import '../../components/preview-flex/preview-flex.css';
 @import '../../04-lection2/01-histogram/histogram.css';
+@import '../../05-lection3/03-calendar/calendar.css';
 @import '../../components/footer/footer.css';
 
 :root {
@@ -19,6 +20,7 @@
     --grey-3: #ACB5BD;
     --grey-4: #495057;
     --grey-5: #F9FAFC;
+    --grey-6: #334D6E;
 
     --error: var(--red);
     --success: var(--blue);
@@ -30,6 +32,7 @@
     --primary-l: 59%;
     --primary: hsl(var(--primary-h), var(--primary-s), var(--primary-l));
     --primary-darken: hsl(var(--primary-h), calc(var(--primary-s) - 12%), calc(var(--primary-l) - 14%));
+    --primary-lighten: hsla(var(--primary-h), var(--primary-s), calc(var(--primary-l) + 20%), 0.2);
 
     --secondary-h: 255;
     --secondary-s: 78%;

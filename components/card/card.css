@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    padding: 25px;
+    padding: 32px;
 }
 
 .card__content {
@@ -15,7 +15,28 @@
     width: 100%;
 }
 
+.card__footer {
+    margin: 30px 0 0 0;
+}
+
+.card__title, .card__subtitle {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    text-align: center;
+}
+
 .card__title {
-    margin: 40px 0 0 0;
     color: var(--black);
+    margin: 0 0 6px 0;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+}
+
+.card__subtitle {
+    margin: 0;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--grey-4);
 }
