@@ -1,0 +1,16 @@
+.footer {
+    height: 130px;
+    box-sizing: border-box;
+    grid-area: footer;
+}
+
+.footer__title {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--grey-3);
+}

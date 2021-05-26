@@ -1,0 +1,6 @@
+.header {
+    height: 118px;
+    padding-bottom: 62px;
+    box-sizing: border-box;
+    grid-area: header;
+}
