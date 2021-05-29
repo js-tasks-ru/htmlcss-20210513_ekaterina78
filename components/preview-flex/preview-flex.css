@@ -1,6 +1,6 @@
 .preview-flex {
-    padding-top: 68px;
-    padding-bottom: 64px;
+    padding-top: 20px;
+    padding-bottom: 4rem;
 }
 
 .preview-flex__container {
@@ -8,11 +8,11 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 0 -15px;
+    margin: 0 -1rem;
 }
 
 .preview-flex__card {
-    flex: 1 1 calc((100% / 3) - 30px);
+    flex: 1 1 calc((100% / 3) - 2rem);
     background: var(--white);
     box-shadow: 0 2px 4px rgba(33, 36, 41, 0.05);
     border-radius: 12px;
@@ -22,4 +22,10 @@
 
 .preview-flex__link {
     text-decoration: none;
+}
+
+@media screen and (min-width: 1280px) {
+    .preview-flex {
+        padding-top: 4.25rem;
+    }
 }
