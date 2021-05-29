@@ -1,0 +1,25 @@
+.avatar {
+    width: 102px;
+    height: 102px;
+}
+
+.avatar_small {
+    width: 64px;
+    height: 64px;
+}
+
+.avatar_large {
+    width: 200px;
+    height: 200px;
+}
+
+.avatar__wrapper {
+    padding: 5%;
+}
+
+.avatar__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
