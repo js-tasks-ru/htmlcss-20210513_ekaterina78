@@ -1,6 +1,6 @@
 .header {
-    padding-top: 25px;
-    padding-bottom: 77px;
+    padding: 17px 0;
+    grid-area: header;
 }
 
 .header__title {
@@ -23,8 +23,8 @@
 .header__menu {
     display: flex;
     flex-grow: 1;
-    width: 24px;
-    height: 24px;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 .header__menu:hover {
@@ -56,6 +56,9 @@
 }
 
 @media screen and (min-width: 768px) {
+    .header {
+        padding-bottom: 62px;
+    }
     .header__container {
         justify-content: space-between;
     }
