@@ -10,7 +10,7 @@ const modalOpen = document.getElementById('modal-open');
 
     modalOpen.addEventListener('click', () => {
         modal.style.display = 'block';
-        document.body.overflow = 'hidden';
+        document.body.style.overflow = 'hidden';
         document.getElementById('modal-close').focus();
         window.addEventListener('keyup', trapFocus);
     });
@@ -60,7 +60,7 @@ function trapFocus() {
 
 function closeModal() {
     modal.style.display = 'none';
-    document.body.overflow = 'initial';
+    document.body.style.overflow = 'initial';
     window.removeEventListener('keyup', trapFocus);
     modalOpen.focus();
 }
