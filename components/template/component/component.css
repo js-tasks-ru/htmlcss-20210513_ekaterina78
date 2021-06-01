@@ -2,4 +2,5 @@
     background: var(--white);
     min-width: 300px;
     grid-area: component;
+    flex-grow: 1;
 }
