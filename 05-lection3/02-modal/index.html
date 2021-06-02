@@ -4,9 +4,42 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./modal.css">
+        <link rel="stylesheet" href="../../03-lection1/01-button/button.css">
         <title>Modal</title>
+        <style>
+            body {
+                padding: 50px;
+            }
+            .container {
+                width: 200px;
+            }
+        </style>
     </head>
     <body>
+        <div class="container">
+            <button type="button" class="button button_primary button_full-width" id="modal-open">Open Modal</button>
+            <div class="modal" id="modal">
+                <div class="modal__popup">
+                    <div class="modal__header-row">
+                        <h1 class="modal__title">Modal title</h1>
+                        <div id="modal-close" class="modal__close-button" tabindex="0">
+                            <svg class="modal__close-icon">
+                                <use xlink:href="../../assets/images/sprite.svg#close"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="modal__content">
+                        <p class="modal__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        </p>
+                    </div>
+                    <div class="modal__button-block">
+                        <button type="button" class="button button_alternate" onclick="closeModal()">Cancel</button>
+                        <button type="button" class="button button_primary">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
     <script src="./index.js"></script> 
 </html>
