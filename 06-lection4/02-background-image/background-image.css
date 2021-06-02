@@ -1,0 +1,25 @@
+.image {
+    width: 100%;
+    height: 100%;
+    background-image: url("./public/forest_2560.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1024px) {
+    .image {
+        background-image: url("./public/forest_1024.jpg");
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .image {
+        background-image: url("./public/forest_768.jpg");
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .image {
+        background-image: url("./public/forest_400.jpg");
+    }
+}

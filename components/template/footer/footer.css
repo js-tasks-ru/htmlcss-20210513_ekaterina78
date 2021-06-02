@@ -2,14 +2,16 @@
     height: 130px;
     box-sizing: border-box;
     grid-area: footer;
+    display: flex;
+    align-items: center;
 }
 
 .footer__title {
     font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 0.75rem;
+    line-height: 1.125rem;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--grey-3);
