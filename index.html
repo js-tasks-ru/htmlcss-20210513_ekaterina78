@@ -3,6 +3,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Component Library Project</title>
         <link rel="stylesheet" href="./assets/css/main.css">
     </head>
@@ -10,11 +11,16 @@
 
         <header class="header">
             <div class="page__box header__container">
+               <div class="header__menu">
+                   <svg class="header__icon">
+                       <use xlink:href="./assets/images/sprite.svg#menu"></use>
+                   </svg>
+               </div>
                <div class="header__logo">
                    <img src="assets/images/logo.svg" alt="logotype">
                </div>
                 <nav class="header__nav">
-                    <a href="" class="header__nav-link">Components</a>
+                    <a href="" class="header__nav-link header__nav-link_selected">Components</a>
                     <a href="" class="header__nav-link">About</a>
                     <a href="" class="header__nav-link">Contact</a>
                 </nav>
