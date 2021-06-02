@@ -57,7 +57,7 @@
 .form-group__input:disabled {
     background: var(--grey-5);
     opacity: 0.5;
-    cursor: not-allowed;
+    pointer-events: none;
 }
 
 .form-group__input_invalid {
