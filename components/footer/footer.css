@@ -1,7 +1,6 @@
 .footer {
     text-align: center;
-    height: 272px;
-    padding: 56px 0;
+    padding: 1.5rem;
 }
 
 .footer__title, .footer__info {
@@ -11,14 +10,23 @@
 
 .footer__title {
     font-weight: 500;
-    font-size: 38px;
-    line-height: 48px;
+    font-size: 2.375rem;
+    line-height: 3rem;
 }
 
 .footer__info {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    width: 45%;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    width: 80%;
     margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        padding: 3.5rem 0;
+    }
+    .footer__info {
+        width: 45%;
+    }
 }

@@ -30,3 +30,12 @@ body {
     min-width: 150px;
     width: 70%;
 }
+
+.accordion__arrow {
+    width: 18px;
+    height: 18px;
+}
+
+.accordion__arrow:hover {
+    color: var(--primary);
+}
