@@ -2,10 +2,30 @@
 <!-- Страница с тултипом -->
 <html lang="ru">
     <head>
+        <title>Tooltip</title>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./tooltip.css">
+        <style>
+            body {
+                padding: 100px;
+            }
+            .container {
+                width: auto;
+            }
+        </style>
     </head>
     <body>
-
+        <div class="container">
+            <div class="tooltip">
+                <div class="tooltip__trigger" tabindex="0">
+                    <svg class="tooltip__help-icon">
+                        <use xlink:href="../../assets/images/sprite.svg#help"></use>
+                    </svg>
+                </div>
+                <div class="tooltip__help">
+                    <h3 class="tooltip__text">Helper text</h3>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
