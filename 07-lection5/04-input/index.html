@@ -2,10 +2,116 @@
 <!-- Страница с полем ввода -->
 <html lang="ru">
     <head>
+        <title>Input</title>
+        <meta charset="utf-8">
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./input.css">
+        <link rel="stylesheet" href="./form-group.css">
+        <style>
+            body {
+                padding: 100px;
+                max-width: 1200px;
+                display: flex;
+                flex-direction: column;
+                gap: 80px;
+            }
+            .form-group-container, .form-input-container {
+                display: grid;
+                grid-template-columns: repeat(2, auto);
+                grid-gap: 15px;
+            }
+        </style>
     </head>
     <body>
+        <form class="form-group-container" action="">
+            <div class="form-group">
+                <label class="form-group__label" for="input-text">Label</label>
+                <div class="input form-group__input">
+                    <input class="input__field" type="text" id="input-text" placeholder="Placeholder">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="form-group__label" for="input-filled">Focus</label>
+                <div class="input form-group__input">
+                    <input class="input__field" type="text" id="input-filled" value="Filled Input"
+                           placeholder="Placeholder" autofocus>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="form-group__label" for="input-success">Success</label>
+                <div class="input form-group__input">
+                    <input class="input__field input__field_success" type="text" id="input-success"
+                           placeholder="Placeholder" value="Success">
+                    <svg class="input__icon">
+                        <use xlink:href="../../assets/images/sprite.svg#success"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="form-group__label" for="input-error">Error</label>
+                <div class="input form-group__input">
+                    <input class="input__field input__field_invalid" type="text" id="input-error"
+                           placeholder="Placeholder" value="Error">
+                    <svg class="input__icon input__icon_error">
+                        <use xlink:href="../../assets/images/sprite.svg#error"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="form-group__label" for="dropdown">Select</label>
+                <div class="input form-group__input">
+                    <select id="dropdown" class="input__field input__field_dropdown">
+                        <option class="input__dropdown-item">Dropdown</option>
+                        <option class="input__dropdown-item">Dropdown 2</option>
+                        <option class="input__dropdown-item">Dropdown 3</option>
+                    </select>
+                    <svg class="input__icon">
+                        <use xlink:href="../../assets/images/sprite.svg#arrow"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="form-group__label" for="input-disabled">Disabled</label>
+                <div class="input form-group__input">
+                    <input class="input__field" type="text" id="input-disabled" value="Disabled Input"
+                           placeholder="Placeholder" disabled>
+                </div>
+            </div>
+        </form>
 
+
+        <form class="form-input-container">
+            <div class="input">
+                <input class="input__field" type="text" placeholder="Placeholder">
+            </div>
+            <div class="input">
+                <input class="input__field" type="text" value="Filled Input" placeholder="Placeholder" autofocus>
+            </div>
+            <div class="input">
+                <input class="input__field input__field_success" type="text" placeholder="Placeholder" value="Success">
+                <svg class="input__icon">
+                    <use xlink:href="../../assets/images/sprite.svg#success"></use>
+                </svg>
+            </div>
+            <div class="input">
+                <input class="input__field input__field_invalid" type="text" placeholder="Placeholder" value="Error">
+                <svg class="input__icon input__icon_error">
+                    <use xlink:href="../../assets/images/sprite.svg#error"></use>
+                </svg>
+            </div>
+            <div class="input">
+                <select class="input__field input__field_dropdown">
+                    <option class="input__dropdown-item">Dropdown</option>
+                    <option class="input__dropdown-item">Dropdown 2</option>
+                    <option class="input__dropdown-item">Dropdown 3</option>
+                </select>
+                <svg class="input__icon input__icon_arrow">
+                    <use xlink:href="../../assets/images/sprite.svg#arrow"></use>
+                </svg>
+            </div>
+            <div class="input">
+                <input class="input__field" type="text" value="Disabled Input" placeholder="Placeholder" disabled>
+            </div>
+        </form>
     </body>
 </html>

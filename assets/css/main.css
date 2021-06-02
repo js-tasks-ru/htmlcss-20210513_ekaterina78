@@ -39,6 +39,11 @@
     --secondary-l: 60%;
     --secondary: hsl(var(--secondary-h), var(--secondary-s), var(--secondary-l));
     --secondary-darken: hsl(var(--secondary-h), calc(var(--secondary-s) - 12%), calc(var(--secondary-l) - 13%));
+
+    --pink-h: 339;
+    --pink-s: 88%;
+    --pink-l: 74%;
+    --pink-lighten: hsla(var(--pink-h), var(--pink-s), var(--pink-l), 0.2);
 }
 
 * {
