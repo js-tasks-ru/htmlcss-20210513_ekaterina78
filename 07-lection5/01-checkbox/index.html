@@ -2,10 +2,55 @@
 <!-- Страница чекбокса -->
 <html lang="ru">
     <head>
+        <title>Checkbox</title>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./checkbox.css">
+        <style>
+            body {
+                padding: 100px;
+            }
+            .container {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+        </style>
     </head>
     <body>
-
+        <div class="container">
+            <label class="checkbox">
+                <input type="checkbox" class="checkbox__input">
+                <div class="checkbox__state">
+                    <div class="checkbox__control">
+                        <svg class="checkbox__icon">
+                            <use xlink:href="../../assets/images/sprite.svg#check"></use>
+                        </svg>
+                    </div>
+                    <div class="checkbox__title">Default</div>
+                </div>
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" class="checkbox__input" checked>
+                <div class="checkbox__state">
+                    <div class="checkbox__control">
+                        <svg class="checkbox__icon">
+                            <use xlink:href="../../assets/images/sprite.svg#check"></use>
+                        </svg>
+                    </div>
+                    <div class="checkbox__title">Checked</div>
+                </div>
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" class="checkbox__input" disabled>
+                <div class="checkbox__state">
+                    <div class="checkbox__control">
+                        <svg class="checkbox__icon">
+                            <use xlink:href="../../assets/images/sprite.svg#check"></use>
+                        </svg>
+                    </div>
+                    <div class="checkbox__title">Disabled</div>
+                </div>
+            </label>
+        </div>
     </body>
 </html>
