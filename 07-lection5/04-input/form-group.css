@@ -13,3 +13,7 @@
     text-transform: uppercase;
     color: var(--grey-3);
 }
+
+.form-group__label_preview {
+    font-size: 0.5rem;
+}

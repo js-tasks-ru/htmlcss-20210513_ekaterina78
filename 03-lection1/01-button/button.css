@@ -76,3 +76,7 @@
 .button_alternate:active {
     color: var(--grey-2);
 }
+
+.button_preview {
+    height: 2rem;
+}

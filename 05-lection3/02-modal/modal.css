@@ -34,6 +34,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--black);
 }
 
 .modal__close-button:focus {
@@ -78,4 +79,35 @@
 .modal__button-block {
     display: flex;
     gap: 10px;
+}
+
+
+
+
+.modal_preview {
+    display: block;
+    position: absolute;
+    height: 95%;
+}
+
+.modal_preview > * {
+    pointer-events: none;
+}
+
+.modal__popup_preview {
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.modal__header-row_preview {
+    height: 2rem;
+}
+
+.modal__title_preview {
+    font-size: 1rem;
+}
+
+.modal__close-button_preview {
+    width: 2rem;
+    height: 2rem;
 }

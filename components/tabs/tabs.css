@@ -1,0 +1,50 @@
+.tabs {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.tabs__input, .tabs__content{
+    display: none;
+}
+
+#all-tabs:checked ~ .page__box .tabs__content_all-tabs,
+#elements:checked ~ .page__box .tabs__content_elements,
+#containers:checked ~ .page__box .tabs__content_containers,
+#templates:checked ~ .page__box .tabs__content_templates {
+    display: block;
+}
+
+#all-tabs:checked ~ .tabs__scroller .tabs__label-container label[for="all-tabs"],
+#elements:checked ~ .tabs__scroller .tabs__label-container label[for="elements"],
+#containers:checked ~ .tabs__scroller .tabs__label-container label[for="containers"],
+#templates:checked ~ .tabs__scroller .tabs__label-container label[for="templates"] {
+    color: var(--black);
+    border-color: var(--black);
+}
+
+.tabs__scroller {
+    background: var(--white);
+}
+
+.tabs__label-container {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+    color: var(--grey-3);
+}
+
+.tabs__label {
+    cursor: pointer;
+    border-bottom: 5px solid transparent;
+}
+
+.tabs__label:hover, .tabs__label:focus {
+    border-color: var(--black);
+    color: var(--black);
+}
