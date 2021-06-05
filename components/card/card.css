@@ -36,9 +36,10 @@
     font-weight: 500;
     font-size: 1.313rem;
     line-height: 1.563rem;
-    /*white-space: nowrap;*/
-    /*overflow: hidden;*/
-    /*text-overflow: ellipsis;*/
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .card__subtitle {
