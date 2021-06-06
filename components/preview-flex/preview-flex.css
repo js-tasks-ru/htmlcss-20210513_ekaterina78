@@ -1,6 +1,7 @@
 .preview-flex {
     padding-top: 1.25rem;
     padding-bottom: 4rem;
+    background: var(--bg);
 }
 
 .preview-flex__container {
@@ -13,6 +14,7 @@
 
 .preview-flex__card {
     flex: 1 1 calc((100% / 3) - 2rem);
+    width: calc((100% / 3) - 1rem);
     margin: 1rem;
     cursor: pointer;
     min-width: 300px;
