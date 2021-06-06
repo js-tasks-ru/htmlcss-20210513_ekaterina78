@@ -57,8 +57,7 @@
     display: block;
 }
 
-.checkbox__input:focus ~ .checkbox__state .checkbox__title,
-.checkbox__input:not([disabled]):hover ~ .checkbox__state .checkbox__title {
+.checkbox__input:focus ~ .checkbox__state .checkbox__title {
     text-decoration: underline;
 }
 
