@@ -27,6 +27,6 @@
         padding: 3.5rem 0;
     }
     .footer__info {
-        width: 45%;
+        max-width: 640px;
     }
 }
