@@ -1,0 +1,73 @@
+.tabs {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.tabs__input {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    outline: none;
+}
+
+.tabs__content{
+    display: none;
+}
+
+#all-tabs:checked ~ .page__box .tabs__content_all-tabs,
+#elements:checked ~ .page__box .tabs__content_elements,
+#containers:checked ~ .page__box .tabs__content_containers,
+#templates:checked ~ .page__box .tabs__content_templates {
+    display: block;
+}
+
+#all-tabs:checked ~ .tabs__scroller .tabs__label[for="all-tabs"],
+#elements:checked ~ .tabs__scroller .tabs__label[for="elements"],
+#containers:checked ~ .tabs__scroller .tabs__label[for="containers"],
+#templates:checked ~ .tabs__scroller .tabs__label[for="templates"],
+#all-tabs:focus ~ .tabs__scroller .tabs__label[for="all-tabs"],
+#elements:focus ~ .tabs__scroller .tabs__label[for="elements"],
+#containers:focus ~ .tabs__scroller .tabs__label[for="containers"],
+#templates:focus ~ .tabs__scroller .tabs__label[for="templates"],
+#all-tabs:hover ~ .tabs__scroller .tabs__label[for="all-tabs"],
+#elements:hover ~ .tabs__scroller .tabs__label[for="elements"],
+#containers:hover ~ .tabs__scroller .tabs__label[for="containers"],
+#templates:hover ~ .tabs__scroller .tabs__label[for="templates"] {
+    color: var(--black);
+    border-color: var(--black);
+}
+
+#all-tabs:focus ~ .tabs__scroller .tabs__label[for="all-tabs"],
+#elements:focus ~ .tabs__scroller .tabs__label[for="elements"],
+#containers:focus ~ .tabs__scroller .tabs__label[for="containers"],
+#templates:focus ~ .tabs__scroller .tabs__label[for="templates"],
+#all-tabs:hover ~ .tabs__scroller .tabs__label[for="all-tabs"],
+#elements:hover ~ .tabs__scroller .tabs__label[for="elements"],
+#containers:hover ~ .tabs__scroller .tabs__label[for="containers"],
+#templates:hover ~ .tabs__scroller .tabs__label[for="templates"] {
+    box-shadow: 0 0 0 0.4rem var(--primary-lighten);
+}
+
+.tabs__scroller {
+    background: var(--white);
+}
+
+.tabs__label-container {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+    color: var(--grey-3);
+}
+
+.tabs__label {
+    cursor: pointer;
+    border-bottom: 5px solid transparent;
+}

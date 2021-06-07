@@ -40,7 +40,7 @@
     transform: translate(-50%, 100%);
 }
 
-.tooltip__trigger:hover ~ .tooltip__help, .tooltip__trigger:focus ~ .tooltip__help {
+.tooltip__trigger:hover ~ .tooltip__help, .tooltip__trigger:focus ~ .tooltip__help, .tooltip__help_preview {
     display: block;
 }
 

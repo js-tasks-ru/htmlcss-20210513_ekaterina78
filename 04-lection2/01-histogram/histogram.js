@@ -2,8 +2,10 @@
     const barsCount = Math.floor(Math.random() * 51);
     for(let i = 0; i < barsCount; i++) {
         const bar = document.createElement('div');
-        bar.className = 'histogram__bar';
-        bar.style.height = Math.floor(Math.random() * 101) + '%';
+        const bar2 = document.createElement('div');
+        bar.className = bar2.className ='histogram__bar';
+        bar.style.height = bar2.style.height = Math.floor(Math.random() * 101) + '%';
         document.getElementById('histogram__bars').appendChild(bar);
+        document.getElementById('histogram__bars2').appendChild(bar2);
     }
 })();
