@@ -44,3 +44,9 @@
     line-height: 1.188rem;
     color: var(--grey-4);
 }
+
+.card__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.5rem;
+}

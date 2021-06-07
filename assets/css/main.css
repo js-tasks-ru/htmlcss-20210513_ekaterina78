@@ -12,6 +12,9 @@
 @import '../../05-lection3/03-calendar/calendar.css';
 @import '../../05-lection3/01-tooltip/tooltip.css';
 @import '../../06-lection4/01-avatar/avatar.css';
+@import '../../07-lection5/01-checkbox/checkbox.css';
+@import '../../07-lection5/01-checkbox/checkbox-group.css';
+@import '../../07-lection5/02-radio/radio.css';
 @import '../../07-lection5/04-input/input.css';
 @import '../../07-lection5/04-input/form-group.css';
 @import '../../components/footer/footer.css';
