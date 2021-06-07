@@ -87,7 +87,6 @@
 .modal_preview {
     display: block;
     position: absolute;
-    height: 95%;
 }
 
 .modal_preview > * {
@@ -95,12 +94,12 @@
 }
 
 .modal__popup_preview {
-    gap: 1rem;
-    padding-bottom: 1rem;
+    gap: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 .modal__header-row_preview {
-    height: 2rem;
+    height: 1.5rem;
 }
 
 .modal__title_preview {
@@ -108,6 +107,6 @@
 }
 
 .modal__close-button_preview {
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
 }

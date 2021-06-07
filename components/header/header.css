@@ -7,10 +7,10 @@
     font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 28px;
-    line-height: 38px;
+    font-size: 1.75rem;
+    line-height: 2.375rem;
     margin: 0;
-    padding-bottom: 2.5rem;
+    padding: 2.5rem 0 2.5rem;
 }
 
 .header__container {

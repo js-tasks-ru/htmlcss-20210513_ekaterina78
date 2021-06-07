@@ -43,11 +43,7 @@
 #all-tabs:focus ~ .tabs__scroller .tabs__label[for="all-tabs"],
 #elements:focus ~ .tabs__scroller .tabs__label[for="elements"],
 #containers:focus ~ .tabs__scroller .tabs__label[for="containers"],
-#templates:focus ~ .tabs__scroller .tabs__label[for="templates"],
-#all-tabs:hover ~ .tabs__scroller .tabs__label[for="all-tabs"],
-#elements:hover ~ .tabs__scroller .tabs__label[for="elements"],
-#containers:hover ~ .tabs__scroller .tabs__label[for="containers"],
-#templates:hover ~ .tabs__scroller .tabs__label[for="templates"] {
+#templates:focus ~ .tabs__scroller .tabs__label[for="templates"] {
     box-shadow: 0 0 0 0.4rem var(--primary-lighten);
 }
 

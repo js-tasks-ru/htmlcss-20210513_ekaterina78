@@ -54,8 +54,7 @@
     display: block;
 }
 
-.radio-button__input:focus ~ .radio-button__state .radio-button__title,
-.radio-button__input:not([disabled]):hover ~ .radio-button__state .radio-button__title {
+.radio-button__input:focus ~ .radio-button__state .radio-button__title {
     text-decoration: underline;
 }
 
