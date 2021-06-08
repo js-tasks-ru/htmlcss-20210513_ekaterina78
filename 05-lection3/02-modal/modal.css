@@ -109,7 +109,7 @@
 .modal__popup_preview {
     gap: 1rem;
     padding-bottom: 0.5rem;
-    width: 80%;
+    width: 80% !important;
     height: fit-content;
 }
 
