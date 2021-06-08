@@ -1,6 +1,37 @@
 .component {
     background: var(--white);
-    min-width: 300px;
     grid-area: component;
     flex-grow: 1;
+    padding: 2rem;
+    box-sizing: border-box;
+    max-width: calc(100vw - 30px);
+}
+
+.component__title {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.75rem;
+    line-height: 2.375rem;
+    color: var(--grey-4);
+    padding-bottom: 3.625rem;
+}
+
+.component__template {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 3rem;
+}
+
+.component__code {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+@media screen and (min-width: 768px) {
+    .component {
+        padding: 2rem 6.625rem 4rem 3rem;
+        min-width: 400px;
+    }
 }

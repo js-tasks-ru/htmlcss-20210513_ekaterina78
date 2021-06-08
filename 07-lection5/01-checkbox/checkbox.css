@@ -21,8 +21,8 @@
     font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
     color: var(--grey-4);
     margin-left: 0.75rem;
 }
@@ -76,5 +76,12 @@
 
 .checkbox__input:disabled ~ .checkbox__state .checkbox__title {
     color: var(--grey-2);
+}
+
+@media screen and (min-width: 768px) {
+    .checkbox__title {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
 }
 

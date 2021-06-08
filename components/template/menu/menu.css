@@ -28,6 +28,10 @@
     text-decoration: none;
 }
 
+.menu__item_selected {
+    color: var(--notification);
+}
+
 .menu__item:hover {
     color: var(--primary);
 }

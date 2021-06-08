@@ -33,8 +33,8 @@
     font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
     margin-left: 0.7rem;
 }
 
@@ -90,6 +90,13 @@
 
 .toggle__input:focus ~ .toggle__state .toggle__title:after {
     text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+    .toggle__title {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
 }
 
 

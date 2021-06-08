@@ -20,7 +20,22 @@
 #all-tabs:checked ~ .page__box .tabs__content_all-tabs,
 #elements:checked ~ .page__box .tabs__content_elements,
 #containers:checked ~ .page__box .tabs__content_containers,
-#templates:checked ~ .page__box .tabs__content_templates {
+#templates:checked ~ .page__box .tabs__content_templates,
+
+#tooltip-html:checked ~ .tabs__content_tooltip-html,
+#tooltip-css:checked ~ .tabs__content_tooltip-css,
+
+#avatar-html:checked ~ .tabs__content_avatar-html,
+#avatar-css:checked ~ .tabs__content_avatar-css,
+
+#calendar-html:checked ~ .tabs__content_calendar-html,
+#calendar-css:checked ~ .tabs__content_calendar-css,
+
+#histogram-html:checked ~ .tabs__content_histogram-html,
+#histogram-css:checked ~ .tabs__content_histogram-css,
+
+#modal-html:checked ~ .tabs__content_modal-html,
+#modal-css:checked ~ .tabs__content_modal-css {
     display: block;
 }
 
@@ -35,7 +50,42 @@
 #all-tabs:hover ~ .tabs__scroller .tabs__label[for="all-tabs"],
 #elements:hover ~ .tabs__scroller .tabs__label[for="elements"],
 #containers:hover ~ .tabs__scroller .tabs__label[for="containers"],
-#templates:hover ~ .tabs__scroller .tabs__label[for="templates"] {
+#templates:hover ~ .tabs__scroller .tabs__label[for="templates"],
+
+#tooltip-html:checked ~ .tabs__scroller .tabs__label[for="tooltip-html"],
+#tooltip-css:checked ~ .tabs__scroller .tabs__label[for="tooltip-css"],
+#tooltip-html:focus ~ .tabs__scroller .tabs__label[for="tooltip-html"],
+#tooltip-css:focus ~ .tabs__scroller .tabs__label[for="tooltip-css"],
+#tooltip-html:hover ~ .tabs__scroller .tabs__label[for="tooltip-html"],
+#tooltip-css:hover ~ .tabs__scroller .tabs__label[for="tooltip-css"],
+
+#avatar-html:checked ~ .tabs__scroller .tabs__label[for="avatar-html"],
+#avatar-css:checked ~ .tabs__scroller .tabs__label[for="avatar-css"],
+#avatar-html:focus ~ .tabs__scroller .tabs__label[for="avatar-html"],
+#avatar-css:focus ~ .tabs__scroller .tabs__label[for="avatar-css"],
+#avatar-html:hover ~ .tabs__scroller .tabs__label[for="avatar-html"],
+#avatar-css:hover ~ .tabs__scroller .tabs__label[for="avatar-css"],
+
+#calendar-html:checked ~ .tabs__scroller .tabs__label[for="calendar-html"],
+#calendar-css:checked ~ .tabs__scroller .tabs__label[for="calendar-css"],
+#calendar-html:focus ~ .tabs__scroller .tabs__label[for="calendar-html"],
+#calendar-css:focus ~ .tabs__scroller .tabs__label[for="calendar-css"],
+#calendar-html:hover ~ .tabs__scroller .tabs__label[for="calendar-html"],
+#calendar-css:hover ~ .tabs__scroller .tabs__label[for="calendar-css"],
+
+#histogram-html:checked ~ .tabs__scroller .tabs__label[for="histogram-html"],
+#histogram-css:checked ~ .tabs__scroller .tabs__label[for="histogram-css"],
+#histogram-html:focus ~ .tabs__scroller .tabs__label[for="histogram-html"],
+#histogram-css:focus ~ .tabs__scroller .tabs__label[for="histogram-css"],
+#histogram-html:hover ~ .tabs__scroller .tabs__label[for="histogram-html"],
+#histogram-css:hover ~ .tabs__scroller .tabs__label[for="histogram-css"],
+
+#modal-html:checked ~ .tabs__scroller .tabs__label[for="modal-html"],
+#modal-css:checked ~ .tabs__scroller .tabs__label[for="modal-css"],
+#modal-html:focus ~ .tabs__scroller .tabs__label[for="modal-html"],
+#modal-css:focus ~ .tabs__scroller .tabs__label[for="modal-css"],
+#modal-html:hover ~ .tabs__scroller .tabs__label[for="modal-html"],
+#modal-css:hover ~ .tabs__scroller .tabs__label[for="modal-css"] {
     color: var(--black);
     border-color: var(--black);
 }
@@ -43,7 +93,22 @@
 #all-tabs:focus ~ .tabs__scroller .tabs__label[for="all-tabs"],
 #elements:focus ~ .tabs__scroller .tabs__label[for="elements"],
 #containers:focus ~ .tabs__scroller .tabs__label[for="containers"],
-#templates:focus ~ .tabs__scroller .tabs__label[for="templates"] {
+#templates:focus ~ .tabs__scroller .tabs__label[for="templates"],
+
+#tooltip-html:focus ~ .tabs__scroller .tabs__label[for="tooltip-html"],
+#tooltip-css:focus ~ .tabs__scroller .tabs__label[for="tooltip-css"],
+
+#avatar-html:focus ~ .tabs__scroller .tabs__label[for="avatar-html"],
+#avatar-css:focus ~ .tabs__scroller .tabs__label[for="avatar-css"],
+
+#calendar-html:focus ~ .tabs__scroller .tabs__label[for="calendar-html"],
+#calendar-css:focus ~ .tabs__scroller .tabs__label[for="calendar-css"],
+
+#histogram-html:focus ~ .tabs__scroller .tabs__label[for="histogram-html"],
+#histogram-css:focus ~ .tabs__scroller .tabs__label[for="histogram-css"],
+
+#modal-html:focus ~ .tabs__scroller .tabs__label[for="modal-html"],
+#modal-css:focus ~ .tabs__scroller .tabs__label[for="modal-css"] {
     box-shadow: 0 0 0 0.4rem var(--primary-lighten);
 }
 

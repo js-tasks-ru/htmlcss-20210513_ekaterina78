@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!-- Главная страница -->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Component Page</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../components/template/template-main.css">
+</head>
+<body class="page">
+
+<header class="header">
+    <div class="page__box header__container">
+        <div class="header__menu">
+            <svg class="header__icon">
+                <use xlink:href="../assets/images/sprite.svg#menu"></use>
+            </svg>
+        </div>
+        <div class="header__logo">
+            <img src="../assets/images/logo.svg" alt="logotype">
+        </div>
+        <nav class="header__nav">
+            <a href="" class="header__nav-link header__nav-link_selected">Components</a>
+            <a href="" class="header__nav-link">About</a>
+            <a href="" class="header__nav-link">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main class="page__main page__box">
+    <nav class="menu">
+        <div class="menu__section">
+            <h2 class="menu__section-title">Elements</h2>
+            <a class="menu__item" href="./avatar.html">Avatar</a>
+            <a class="menu__item" href="./form-elements.html">Custom form elements</a>
+            <a class="menu__item" href="./histogram-tpl.html">Histogram</a>
+        </div>
+        <div class="menu__section">
+            <h2 class="menu__section-title">Containers</h2>
+            <a class="menu__item" href="./calendar.html">Calendar</a>
+            <a class="menu__item menu__item_selected" href="./modal.html">Modal dialog</a>
+            <a class="menu__item" href="./tooltip.html">Tooltip</a>
+        </div>
+<!--        <div class="menu__section">-->
+<!--            <h2 class="menu__section-title">Templates</h2>-->
+<!--            <a class="menu__item" href="">Avatar</a>-->
+<!--            <a class="menu__item" href="">Custom form elements</a>-->
+<!--            <a class="menu__item" href="">Button</a>-->
+<!--            <a class="menu__item" href="">Avatar</a>-->
+<!--            <a class="menu__item" href="">Custom form elements</a>-->
+<!--            <a class="menu__item" href="">Button</a>-->
+<!--        </div>-->
+    </nav>
+    <div class="component">
+        <div class="component__title">Modal</div>
+        <div class="component__template">
+            <button type="button" class="button button_primary button_modal-template" id="modal-open">Open Modal</button>
+            <div class="modal" id="modal">
+                <div class="modal__popup">
+                    <div class="modal__header-row">
+                        <h1 class="modal__title">Modal title</h1>
+                        <div id="modal-close" class="modal__close-button" tabindex="0">
+                            <svg class="modal__close-icon">
+                                <use xlink:href="../assets/images/sprite.svg#close"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="modal__content">
+                        <p class="modal__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        </p>
+                    </div>
+                    <div class="modal__button-block">
+                        <button type="button" class="button button_alternate" onclick="closeModal()">Cancel</button>
+                        <button type="button" class="button button_primary">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tabs component__tabs">
+            <input class="tabs__input" type="radio" name="component-modal" id="modal-html" checked />
+            <input class="tabs__input" type="radio" name="component-modal" id="modal-css" />
+            <div class="tabs__scroller">
+                <div class="tabs__label-container page__box">
+                    <label class="tabs__label" for="modal-html">HTML</label>
+                    <label class="tabs__label" for="modal-css">CSS</label>
+                </div>
+            </div>
+            <hr class="divider">
+            <div class="tabs__content tabs__content_component tabs__content_modal-html">
+<pre class="component__code">
+    &lt;div class=&quot;modal&quot; id=&quot;modal&quot;&gt;
+        &lt;div class=&quot;modal__popup&quot;&gt;
+            &lt;div class=&quot;modal__header-row&quot;&gt;
+                &lt;h1 class=&quot;modal__title&quot;&gt;Modal title&lt;/h1&gt;
+                &lt;div id=&quot;modal-close&quot; class=&quot;modal__close-button&quot; tabindex=&quot;0&quot;&gt;
+                    &lt;svg class=&quot;modal__close-icon&quot;&gt;
+                        &lt;use xlink:href=&quot;../assets/images/sprite.svg#close&quot;&gt;&lt;/use&gt;
+                    &lt;/svg&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;modal__content&quot;&gt;
+                &lt;p class=&quot;modal__text&quot;&gt;Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;modal__button-block&quot;&gt;
+                &lt;button type=&quot;button&quot; class=&quot;button button_alternate&quot; onclick=&quot;closeModal()&quot;&gt;Cancel&lt;/button&gt;
+                &lt;button type=&quot;button&quot; class=&quot;button button_primary&quot;&gt;OK&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+</pre>
+            </div>
+            <div class="tabs__content tabs__content_component tabs__content_modal-css">
+<pre class="component__code">
+.modal {
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(196, 196, 196, 0.5);
+    z-index: 999;
+}
+
+.modal__popup {
+    max-width: 500px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    background: var(--white);
+    display: grid;
+    gap: 2.5rem;
+    padding: 0 0 2.5rem 2.5rem;
+}
+
+.modal__header-row {
+    display: flex;
+    justify-content: space-between;
+    height: 4.5rem;
+}
+
+.modal__close-button {
+    width: 3.125rem;
+    height: 3.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__close-button:focus {
+    outline: none;
+}
+.modal__close-button:hover .modal__close-icon, .modal__close-button:focus .modal__close-icon {
+    border: 2px solid var(--primary);
+    border-radius: 50%;
+    color: var(--primary);
+}
+
+.modal__close-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.modal__title, .modal__text {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    line-height: 24px;
+}
+
+.modal__title {
+    align-self: flex-end;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--black);
+    margin: 0;
+}
+
+.modal__text {
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--grey-4);
+    margin: 0;
+}
+
+.modal__content, .modal__button-block {
+    padding-right: 2.5rem;
+}
+
+.modal__button-block {
+    display: flex;
+    gap: 10px;
+}
+</pre>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="page__box">
+        <h2 class="footer__title">Reusable component library</h2>
+    </div>
+</footer>
+<script src="../05-lection3/02-modal/index.js"></script>
+</body>
+</html>

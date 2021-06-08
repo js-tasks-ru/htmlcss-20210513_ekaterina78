@@ -7,12 +7,12 @@
     min-width: 100px;
     border: 1px solid var(--grey-2);
     border-radius: 8px;
-    height: 3.5rem;
+    height: 3rem;
     font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 1.25rem;
-    line-height: 1.625rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
     color: var(--black);
     padding: 0 3.5rem 0 1.5rem;
     text-overflow: ellipsis;
@@ -71,4 +71,11 @@
     height: 1.5rem;
     font-size: 0.75rem;
     padding-right: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .input__field {
+        font-size: 1.25rem;
+        line-height: 1.625rem;
+    }
 }

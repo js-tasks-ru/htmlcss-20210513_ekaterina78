@@ -35,21 +35,21 @@
                 <input class="tabs__input" type="radio" name="tabs" id="all-tabs" checked />
                 <input class="tabs__input" type="radio" name="tabs" id="elements" />
                 <input class="tabs__input" type="radio" name="tabs" id="containers" />
-                <input class="tabs__input" type="radio" name="tabs" id="templates" />
+<!--                <input class="tabs__input" type="radio" name="tabs" id="templates" />-->
 
                 <div class="tabs__scroller">
                     <div class="tabs__label-container page__box">
                         <label class="tabs__label" for="all-tabs">All components</label>
                         <label class="tabs__label" for="elements">Elements</label>
                         <label class="tabs__label" for="containers">Containers</label>
-                        <label class="tabs__label" for="templates">Templates</label>
+<!--                        <label class="tabs__label" for="templates">Templates</label>-->
                     </div>
                 </div>
 
                 <div class="page__box preview-flex">
                     <div class="tabs__content tabs__content_all-tabs">
                         <div class="preview-flex__container">
-                                <a class="preview-flex__card card">
+                                <a class="preview-flex__card card" href="./pages/tooltip.html">
                                     <div class="card__content">
                                         <div class="tooltip tooltip_preview">
                                             <div class="tooltip__trigger" tabindex="0">
@@ -67,9 +67,9 @@
                                         <h4 class="card__subtitle">Container</h4>
                                     </div>
                                 </a>
-                                <a class="preview-flex__card card">
+                                <a class="preview-flex__card card" href="./pages/form-elements.html">
                                     <div class="card__content">
-                                        <div class="card__grid">
+                                        <div class="card__grid card__grid_preview">
                                             <div class="checkbox-group">
                                                 <label class="checkbox">
                                                     <input type="checkbox" class="checkbox__input">
@@ -141,7 +141,7 @@
                                         <h4 class="card__subtitle">Element</h4>
                                     </div>
                                 </a>
-                                <a class="preview-flex__card card">
+                                <a class="preview-flex__card card" href="./pages/calendar.html">
                                     <div class="card__content">
                                         <div class="calendar">
                                             <div class="calendar__title">October 2019</div>
@@ -198,7 +198,7 @@
                                         <h4 class="card__subtitle">Container</h4>
                                     </div>
                                 </a>
-                                <a class="preview-flex__card card">
+                                <a class="preview-flex__card card" href="./pages/modal.html">
                                     <div class="card__content">
                                         <div class="modal modal_preview" id="modal">
                                             <div class="modal__popup modal__popup_preview">
@@ -236,9 +236,9 @@
                                         <h4 class="card__subtitle">Container</h4>
                                     </div>
                                 </a>
-                                <a class="preview-flex__card card">
+                                <a class="preview-flex__card card" href="./pages/histogram-tpl.html">
                                     <div class="card__content">
-                                        <div class="histogram histogram_preview">
+                                        <div class="histogram">
                                             <div class="histogram__header-row">
                                                 <h2 class="histogram__header">Total orders</h2>
                                                 <div class="histogram__link">View all</div>
@@ -252,7 +252,7 @@
                                         <h4 class="card__subtitle">Element</h4>
                                     </div>
                                 </a>
-                                <a class="preview-flex__card card">
+                                <a class="preview-flex__card card" href="./pages/avatar.html">
                                     <div class="card__content">
                                         <div class="avatar avatar_large">
                                             <div class="avatar__wrapper">
@@ -269,9 +269,9 @@
                     </div>
                     <div class="tabs__content tabs__content_elements">
                         <div class="preview-flex__container">
-                            <a class="preview-flex__card card">
+                            <a class="preview-flex__card card" href="./pages/form-elements.html">
                                 <div class="card__content">
-                                    <div class="card__grid">
+                                    <div class="card__grid card__grid_preview">
                                         <div class="checkbox-group">
                                             <label class="checkbox">
                                                 <input type="checkbox" class="checkbox__input">
@@ -343,7 +343,7 @@
                                     <h4 class="card__subtitle">Element</h4>
                                 </div>
                             </a>
-                            <a class="preview-flex__card card">
+                            <a class="preview-flex__card card" href="./pages/histogram-tpl.html">
                                 <div class="card__content">
                                     <div class="histogram">
                                         <div class="histogram__header-row">
@@ -359,7 +359,7 @@
                                     <h4 class="card__subtitle">Element</h4>
                                 </div>
                             </a>
-                            <a class="preview-flex__card card">
+                            <a class="preview-flex__card card" href="./pages/avatar.html">
                                 <div class="card__content">
                                     <div class="avatar avatar_large">
                                         <div class="avatar__wrapper">
@@ -376,7 +376,7 @@
                     </div>
                     <div class="tabs__content tabs__content_containers">
                         <div class="preview-flex__container">
-                            <a class="preview-flex__card card">
+                            <a class="preview-flex__card card" href="./pages/tooltip.html">
                                 <div class="card__content">
                                     <div class="tooltip tooltip_preview">
                                         <div class="tooltip__trigger" tabindex="0">
@@ -392,7 +392,7 @@
                                 <h3 class="card__title">Tooltip</h3>
                                 <h4 class="card__subtitle">Container</h4>
                             </a>
-                            <a class="preview-flex__card card">
+                            <a class="preview-flex__card card" href="./pages/calendar.html">
                                 <div class="card__content">
                                     <div class="calendar">
                                         <div class="calendar__title">October 2019</div>
@@ -449,7 +449,7 @@
                                     <h4 class="card__subtitle">Container</h4>
                                 </div>
                             </a>
-                            <a class="preview-flex__card card">
+                            <a class="preview-flex__card card" href="./pages/modal.html">
                                 <div class="card__content">
                                     <div class="modal modal_preview" id="modal2">
                                         <div class="modal__popup modal__popup_preview">
@@ -489,7 +489,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="tabs__content tabs__content_templates"><p>Templates</p></div>
+<!--                    <div class="tabs__content tabs__content_templates"><p>Templates</p></div>-->
                 </div>
             </div>
         </main>
