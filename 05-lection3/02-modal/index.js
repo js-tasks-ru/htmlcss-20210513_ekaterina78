@@ -11,7 +11,7 @@ const modalOpen = document.getElementById('modal-open');
     modalOpen.addEventListener('click', () => {
         modal.style.display = 'block';
         document.body.style.overflow = 'hidden';
-        document.getElementById('modal-close').focus();
+        document.getElementById('input-name').focus();
         window.addEventListener('keyup', trapFocus);
     });
 
