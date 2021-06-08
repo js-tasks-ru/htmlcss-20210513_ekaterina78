@@ -100,6 +100,7 @@
 .modal_preview {
     display: block;
     position: absolute;
+    pointer-events: none;
 }
 
 .modal_preview > * {
