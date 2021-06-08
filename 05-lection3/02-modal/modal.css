@@ -25,7 +25,7 @@
 .modal__header-row {
     display: flex;
     justify-content: space-between;
-    height: 4.5rem;
+    height: 3.5rem;
 }
 
 .modal__close-button {
@@ -72,6 +72,17 @@
     margin: 0;
 }
 
+.modal__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.modal__content_preview {
+    gap: 0.5rem;
+    padding-top: 0.5rem;
+}
+
 .modal__content, .modal__button-block {
     padding-right: 2.5rem;
 }
@@ -79,6 +90,7 @@
 .modal__button-block {
     display: flex;
     gap: 10px;
+    width: 50%;
 }
 
 
@@ -94,8 +106,10 @@
 }
 
 .modal__popup_preview {
-    gap: 0.5rem;
+    gap: 1rem;
     padding-bottom: 0.5rem;
+    width: 80%;
+    height: fit-content;
 }
 
 .modal__header-row_preview {
