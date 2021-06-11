@@ -1,8 +1,10 @@
-@import '../../node_modules/normalize.css/normalize.css';
+/*@import '../../node_modules/normalize.css/normalize.css';*/
+@import '../resets/normalize.css';
 @import '../fonts/fonts.css';
 @import '../../components/header/header.css';
 @import '../../components/page/page.css';
 @import '../../components/card/card.css';
+@import '../../components/divider/divider.css';
 @import '../../components/preview-flex/preview-flex.css';
 @import '../../components/tabs/tabs.css';
 @import '../../03-lection1/01-button/button.css';
@@ -11,6 +13,10 @@
 @import '../../05-lection3/03-calendar/calendar.css';
 @import '../../05-lection3/01-tooltip/tooltip.css';
 @import '../../06-lection4/01-avatar/avatar.css';
+@import '../../07-lection5/01-checkbox/checkbox.css';
+@import '../../07-lection5/01-checkbox/checkbox-group.css';
+@import '../../07-lection5/02-radio/radio.css';
+@import '../../07-lection5/03-toggler/toggler.css';
 @import '../../07-lection5/04-input/input.css';
 @import '../../07-lection5/04-input/form-group.css';
 @import '../../components/footer/footer.css';
@@ -33,6 +39,8 @@
     --success: var(--blue);
 
     --bg: var(--grey-5);
+
+    --notification: #D84910;
 
     --primary-h: 228;
     --primary-s: 81%;

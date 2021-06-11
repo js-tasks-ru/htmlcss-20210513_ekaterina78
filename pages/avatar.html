@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!-- Главная страница -->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Component Page</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../components/template/template-main.css">
+</head>
+<body class="page">
+
+<header class="header">
+    <div class="page__box header__container">
+        <div class="header__menu">
+            <svg class="header__icon">
+                <use xlink:href="../assets/images/sprite.svg#menu"></use>
+            </svg>
+        </div>
+        <div class="header__logo">
+            <img src="../assets/images/logo.svg" alt="logotype">
+        </div>
+        <nav class="header__nav">
+            <a href="" class="header__nav-link header__nav-link_selected">Components</a>
+            <a href="" class="header__nav-link">About</a>
+            <a href="" class="header__nav-link">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main class="page__main page__box">
+    <nav class="menu">
+        <div class="menu__section">
+            <h2 class="menu__section-title">Elements</h2>
+            <a class="menu__item menu__item_selected" href="./avatar.html">Avatar</a>
+            <a class="menu__item" href="./form-elements.html">Custom form elements</a>
+            <a class="menu__item" href="./histogram-tpl.html">Histogram</a>
+        </div>
+        <div class="menu__section">
+            <h2 class="menu__section-title">Containers</h2>
+            <a class="menu__item" href="./calendar.html">Calendar</a>
+            <a class="menu__item" href="./modal.html">Modal dialog</a>
+            <a class="menu__item" href="./tooltip.html">Tooltip</a>
+        </div>
+        <!--        <div class="menu__section">-->
+        <!--            <h2 class="menu__section-title">Templates</h2>-->
+        <!--            <a class="menu__item" href="">Avatar</a>-->
+        <!--            <a class="menu__item" href="">Custom form elements</a>-->
+        <!--            <a class="menu__item" href="">Button</a>-->
+        <!--            <a class="menu__item" href="">Avatar</a>-->
+        <!--            <a class="menu__item" href="">Custom form elements</a>-->
+        <!--            <a class="menu__item" href="">Button</a>-->
+        <!--        </div>-->
+    </nav>
+    <div class="component">
+        <div class="component__title">Avatar</div>
+        <div class="component__template">
+            <div class="avatar avatar_large">
+                <div class="avatar__wrapper">
+                    <img class="avatar__image" src="../06-lection4/01-avatar/public/avatar-200.jpg" alt="avatar">
+                </div>
+            </div>
+        </div>
+        <div class="tabs component__tabs">
+            <input class="tabs__input" type="radio" name="component-avatar" id="avatar-html" checked />
+            <input class="tabs__input" type="radio" name="component-avatar" id="avatar-css" />
+            <div class="tabs__scroller">
+                <div class="tabs__label-container page__box">
+                    <label class="tabs__label" for="avatar-html">HTML</label>
+                    <label class="tabs__label" for="avatar-css">CSS</label>
+                </div>
+            </div>
+            <hr class="divider">
+            <div class="tabs__content tabs__content_component tabs__content_avatar-html">
+    <pre class="component__code">
+    &lt;div class=&quot;avatar avatar_large&quot;&gt;
+        &lt;div class=&quot;avatar__wrapper&quot;&gt;
+            &lt;img class=&quot;avatar__image&quot;
+                src=&quot;../06-lection4/01-avatar/public/avatar-200.jpg&quot; alt=&quot;avatar&quot;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    </pre>
+            </div>
+            <div class="tabs__content tabs__content_component tabs__content_avatar-css">
+<pre class="component__code">
+.avatar {
+    width: 102px;
+    height: 102px;
+}
+
+.avatar_small {
+    width: 64px;
+    height: 64px;
+}
+
+.avatar_large {
+    width: 200px;
+    height: 200px;
+}
+
+.avatar__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+</pre>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="page__box">
+        <h2 class="footer__title">Reusable component library</h2>
+    </div>
+</footer>
+
+</body>
+</html>

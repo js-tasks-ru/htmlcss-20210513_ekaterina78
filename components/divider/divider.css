@@ -1,0 +1,15 @@
+.divider {
+    border: none;
+    color: var(--grey-2);
+    background-color: var(--grey-2);
+    height: 1px;
+    margin-left: -2rem;
+    margin-right: -2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .divider {
+        margin-left: -3rem;
+        margin-right: -6.625rem;
+    }
+}

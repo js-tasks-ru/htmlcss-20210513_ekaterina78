@@ -10,6 +10,7 @@
 }
 
 .modal__popup {
+    width: 80%;
     max-width: 500px;
     top: 50%;
     left: 50%;
@@ -25,7 +26,7 @@
 .modal__header-row {
     display: flex;
     justify-content: space-between;
-    height: 4.5rem;
+    height: 3.5rem;
 }
 
 .modal__close-button {
@@ -72,6 +73,17 @@
     margin: 0;
 }
 
+.modal__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.modal__content_preview {
+    gap: 0.5rem;
+    padding-top: 0.5rem;
+}
+
 .modal__content, .modal__button-block {
     padding-right: 2.5rem;
 }
@@ -79,6 +91,7 @@
 .modal__button-block {
     display: flex;
     gap: 10px;
+    width: 50%;
 }
 
 
@@ -87,7 +100,7 @@
 .modal_preview {
     display: block;
     position: absolute;
-    height: 95%;
+    pointer-events: none;
 }
 
 .modal_preview > * {
@@ -96,11 +109,13 @@
 
 .modal__popup_preview {
     gap: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    width: 80% !important;
+    height: fit-content;
 }
 
 .modal__header-row_preview {
-    height: 2rem;
+    height: 1.5rem;
 }
 
 .modal__title_preview {
@@ -108,6 +123,13 @@
 }
 
 .modal__close-button_preview {
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+
+@media screen and (min-width: 768px) {
+    .modal__popup {
+        width: 50%;
+    }
 }

@@ -1,5 +1,6 @@
 .header {
     padding-top: 17px;
+    padding-bottom: 2.5rem;
     grid-area: header;
 }
 
@@ -7,10 +8,10 @@
     font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 28px;
-    line-height: 38px;
+    font-size: 1.75rem;
+    line-height: 2.375rem;
     margin: 0;
-    padding-bottom: 2.5rem;
+    padding-top: 2.5rem;
 }
 
 .header__container {

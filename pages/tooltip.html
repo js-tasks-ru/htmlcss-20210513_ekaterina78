@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!-- Главная страница -->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Component Page</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../components/template/template-main.css">
+</head>
+<body class="page">
+
+<header class="header">
+    <div class="page__box header__container">
+        <div class="header__menu">
+            <svg class="header__icon">
+                <use xlink:href="../assets/images/sprite.svg#menu"></use>
+            </svg>
+        </div>
+        <div class="header__logo">
+            <img src="../assets/images/logo.svg" alt="logotype">
+        </div>
+        <nav class="header__nav">
+            <a href="" class="header__nav-link header__nav-link_selected">Components</a>
+            <a href="" class="header__nav-link">About</a>
+            <a href="" class="header__nav-link">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main class="page__main page__box">
+    <nav class="menu">
+        <div class="menu__section">
+            <h2 class="menu__section-title">Elements</h2>
+            <a class="menu__item" href="./avatar.html">Avatar</a>
+            <a class="menu__item" href="./form-elements.html">Custom form elements</a>
+            <a class="menu__item" href="./histogram-tpl.html">Histogram</a>
+        </div>
+        <div class="menu__section">
+            <h2 class="menu__section-title">Containers</h2>
+            <a class="menu__item" href="./calendar.html">Calendar</a>
+            <a class="menu__item" href="./modal.html">Modal dialog</a>
+            <a class="menu__item menu__item_selected" href="./tooltip.html">Tooltip</a>
+        </div>
+<!--        <div class="menu__section">-->
+<!--            <h2 class="menu__section-title">Templates</h2>-->
+<!--            <a class="menu__item" href="">Avatar</a>-->
+<!--            <a class="menu__item" href="">Custom form elements</a>-->
+<!--            <a class="menu__item" href="">Button</a>-->
+<!--            <a class="menu__item" href="">Avatar</a>-->
+<!--            <a class="menu__item" href="">Custom form elements</a>-->
+<!--            <a class="menu__item" href="">Button</a>-->
+<!--        </div>-->
+    </nav>
+    <div class="component">
+        <div class="component__title">Tooltip</div>
+        <div class="component__template">
+            <div class="tooltip">
+                <div class="tooltip__trigger" tabindex="0">
+                    <svg class="tooltip__help-icon">
+                        <use xlink:href="../assets/images/sprite.svg#help"></use>
+                    </svg>
+                </div>
+                <div class="tooltip__help">
+                    <h3 class="tooltip__text">Helper text</h3>
+                </div>
+            </div>
+        </div>
+        <div class="tabs component__tabs">
+            <input class="tabs__input" type="radio" name="component-tooltip" id="tooltip-html" checked />
+            <input class="tabs__input" type="radio" name="component-tooltip" id="tooltip-css" />
+            <div class="tabs__scroller">
+                <div class="tabs__label-container page__box">
+                    <label class="tabs__label" for="tooltip-html">HTML</label>
+                    <label class="tabs__label" for="tooltip-css">CSS</label>
+                </div>
+            </div>
+            <hr class="divider">
+            <div class="tabs__content tabs__content_component tabs__content_tooltip-html">
+    <pre class="component__code">
+    &lt;div class=&quot;tooltip&quot;&gt;
+        &lt;div class=&quot;tooltip__trigger&quot; tabindex=&quot;0&quot;&gt;
+            &lt;svg class=&quot;tooltip__help-icon&quot;&gt;
+                &lt;use xlink:href=&quot;../assets/images/sprite.svg#help&quot;&gt;&lt;/use&gt;
+            &lt;/svg&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;tooltip__help&quot;&gt;
+            &lt;h3 class=&quot;tooltip__text&quot;&gt;Helper text&lt;/h3&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    </pre>
+            </div>
+            <div class="tabs__content tabs__content_component tabs__content_tooltip-css">
+<pre class="component__code">
+.tooltip {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tooltip__trigger {
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+
+.tooltip__help-icon {
+    width: 100%;
+    height: 100%;
+    color: var(--primary);
+}
+
+.tooltip__help {
+    display: none;
+    max-width: 400px;
+    min-width: 100px;
+    border-radius: 10px;
+    background: var(--primary);
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    transform: translate(-50%, -10px);
+    padding: 0 0.5rem;
+}
+
+.tooltip__help:after {
+    content: &quot;&quot;;
+    position: absolute;
+    border: 7px solid transparent;
+    border-top: 7px solid var(--primary);
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 100%);
+}
+
+.tooltip__trigger:hover ~ .tooltip__help, .tooltip__trigger:focus ~ .tooltip__help {
+    display: block;
+}
+
+.tooltip__text {
+    text-align: center;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--grey-2);
+}
+</pre>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="page__box">
+        <h2 class="footer__title">Reusable component library</h2>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -3,7 +3,7 @@
 .button {
     min-width: 70px;
     display: inline-block;
-    height: 48px;
+    height: 3rem;
     border-radius: 8px;
     border: none;
     cursor: pointer;
@@ -13,8 +13,8 @@
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 1rem;
+    line-height: 1.2rem;
     text-align: center;
 }
 
@@ -78,5 +78,10 @@
 }
 
 .button_preview {
-    height: 2rem;
+    height: 1.5rem;
+    font-size: 0.75rem;
+}
+
+.button_modal-template {
+    width: 50%;
 }

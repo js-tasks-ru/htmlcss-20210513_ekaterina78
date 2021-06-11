@@ -5,6 +5,10 @@
     align-items: center;
 }
 
+.tooltip_preview {
+    transform: translateY(2rem);
+}
+
 .tooltip__trigger {
     width: 1.5rem;
     height: 1.5rem;

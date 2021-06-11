@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<!-- Главная страница -->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Component Page</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../components/template/template-main.css">
+</head>
+<body class="page">
+
+<header class="header">
+    <div class="page__box header__container">
+        <div class="header__menu">
+            <svg class="header__icon">
+                <use xlink:href="../assets/images/sprite.svg#menu"></use>
+            </svg>
+        </div>
+        <div class="header__logo">
+            <img src="../assets/images/logo.svg" alt="logotype">
+        </div>
+        <nav class="header__nav">
+            <a href="" class="header__nav-link header__nav-link_selected">Components</a>
+            <a href="" class="header__nav-link">About</a>
+            <a href="" class="header__nav-link">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main class="page__main page__box">
+    <nav class="menu">
+        <div class="menu__section">
+            <h2 class="menu__section-title">Elements</h2>
+            <a class="menu__item" href="./avatar.html">Avatar</a>
+            <a class="menu__item" href="./form-elements.html">Custom form elements</a>
+            <a class="menu__item menu__item_selected" href="./histogram-tpl.html">Histogram</a>
+        </div>
+        <div class="menu__section">
+            <h2 class="menu__section-title">Containers</h2>
+            <a class="menu__item" href="./calendar.html">Calendar</a>
+            <a class="menu__item" href="./modal.html">Modal dialog</a>
+            <a class="menu__item" href="./tooltip.html">Tooltip</a>
+        </div>
+<!--        <div class="menu__section">-->
+<!--            <h2 class="menu__section-title">Templates</h2>-->
+<!--            <a class="menu__item" href="">Avatar</a>-->
+<!--            <a class="menu__item" href="">Custom form elements</a>-->
+<!--            <a class="menu__item" href="">Button</a>-->
+<!--            <a class="menu__item" href="">Avatar</a>-->
+<!--            <a class="menu__item" href="">Custom form elements</a>-->
+<!--            <a class="menu__item" href="">Button</a>-->
+<!--        </div>-->
+    </nav>
+    <div class="component">
+        <div class="component__title">Histogram</div>
+        <div class="component__template">
+            <div class="histogram histogram_preview">
+                <div class="histogram__header-row">
+                    <h2 class="histogram__header">Total orders</h2>
+                    <div class="histogram__link">View all</div>
+                </div>
+                <h4 class="histogram__orders">50254</h4>
+                <div class="histogram__bars" id="histogram__bars"></div>
+            </div>
+        </div>
+        <div class="tabs component__tabs">
+            <input class="tabs__input" type="radio" name="component-histogram" id="histogram-html" checked />
+            <input class="tabs__input" type="radio" name="component-histogram" id="histogram-css" />
+            <div class="tabs__scroller">
+                <div class="tabs__label-container page__box">
+                    <label class="tabs__label" for="histogram-html">HTML</label>
+                    <label class="tabs__label" for="histogram-css">CSS</label>
+                </div>
+            </div>
+            <hr class="divider">
+            <div class="tabs__content tabs__content_component tabs__content_histogram-html">
+<pre class="component__code">
+    &lt;div class=&quot;histogram&quot;&gt;
+        &lt;div class=&quot;histogram__header-row&quot;&gt;
+            &lt;h1 class=&quot;histogram__header&quot;&gt;Total orders&lt;/h1&gt;
+            &lt;a href=&quot;&quot; class=&quot;histogram__link&quot;&gt;View all&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;h4 class=&quot;histogram__orders&quot;&gt;50254&lt;/h4&gt;
+        &lt;div class=&quot;histogram__bars&quot; id=&quot;histogram__bars&quot;&gt;
+            &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 45%;&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 60%;&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 77%;&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 51%;&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 14%;&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 40%;&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 22%;&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 2%;&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 1%;&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 2%;&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 67%;&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 73%;&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 54%;&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 2%;&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 49%;&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 88%;&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 91%;&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 5%;&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 32%;&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 41%;&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 95%;&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 48%;&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 94%;&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 97%;&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 97%;&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 4%;&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 33%;&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 24%;&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 80%;&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+</pre>
+            </div>
+            <div class="tabs__content tabs__content_component tabs__content_histogram-css">
+<pre class="component__code">
+.histogram {
+    width: 100%;
+    background: var(--white);
+    border: 1px solid var(--grey-3);
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.histogram__header-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.histogram__header, .histogram__orders {
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--black);
+    margin: 0;
+}
+
+.histogram__header, .histogram__link {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.histogram__header {
+    opacity: 0.8;
+}
+
+.histogram__link {
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.histogram__orders {
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+    margin-bottom: 1.5rem;
+}
+
+.histogram__bars {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    animation: appear 0.6s ease-out;
+}
+
+@keyframes appear {
+    0% {
+        transform: scaleY(0);
+        transform-origin: bottom center;
+    }
+    50% {
+        transform: scaleY(0);
+        transform-origin: bottom center;
+    }
+    100% {
+        transform: scaleY(1);
+        transform-origin: bottom center;
+    }
+}
+
+.histogram__bar {
+    flex: 1 0 auto;
+    margin-right: 1px;
+    background: var(--primary);
+}
+
+.histogram__bar:last-child {
+    margin-right: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .histogram {
+        padding: 1rem;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .histogram {
+        padding: 1rem 1.5rem 1.5rem 1.5rem;
+    }
+}
+</pre>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="page__box">
+        <h2 class="footer__title">Reusable component library</h2>
+    </div>
+</footer>
+
+<script src="../04-lection2/01-histogram/histogram-tpl.js"></script>
+</body>
+</html>

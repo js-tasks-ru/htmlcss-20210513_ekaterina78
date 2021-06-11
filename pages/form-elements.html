@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<!-- Главная страница -->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Component Page</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../components/template/template-main.css">
+</head>
+<body class="page">
+
+<header class="header">
+    <div class="page__box header__container">
+        <div class="header__menu">
+            <svg class="header__icon">
+                <use xlink:href="../assets/images/sprite.svg#menu"></use>
+            </svg>
+        </div>
+        <div class="header__logo">
+            <img src="../assets/images/logo.svg" alt="logotype">
+        </div>
+        <nav class="header__nav">
+            <a href="" class="header__nav-link header__nav-link_selected">Components</a>
+            <a href="" class="header__nav-link">About</a>
+            <a href="" class="header__nav-link">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main class="page__main page__box">
+    <nav class="menu">
+        <div class="menu__section">
+            <h2 class="menu__section-title">Elements</h2>
+            <a class="menu__item" href="./avatar.html">Avatar</a>
+            <a class="menu__item menu__item_selected" href="./form-elements.html">Custom form elements</a>
+            <a class="menu__item" href="./histogram-tpl.html">Histogram</a>
+        </div>
+        <div class="menu__section">
+            <h2 class="menu__section-title">Containers</h2>
+            <a class="menu__item" href="./calendar.html">Calendar</a>
+            <a class="menu__item" href="./modal.html">Modal dialog</a>
+            <a class="menu__item" href="./tooltip.html">Tooltip</a>
+        </div>
+<!--        <div class="menu__section">-->
+<!--            <h2 class="menu__section-title">Templates</h2>-->
+<!--            <a class="menu__item" href="">Avatar</a>-->
+<!--            <a class="menu__item" href="">Custom form elements</a>-->
+<!--            <a class="menu__item" href="">Button</a>-->
+<!--            <a class="menu__item" href="">Avatar</a>-->
+<!--            <a class="menu__item" href="">Custom form elements</a>-->
+<!--            <a class="menu__item" href="">Button</a>-->
+<!--        </div>-->
+    </nav>
+    <div class="component">
+        <div class="component__title">Custom form elements</div>
+        <div class="component__template">
+            <div class="card__grid card__grid_3-columns">
+                <div class="checkbox-group .checkbox-group_lg-gap">
+                    <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <div class="checkbox__state">
+                            <div class="checkbox__control">
+                                <svg class="checkbox__icon">
+                                    <use xlink:href="../assets/images/sprite.svg#check"></use>
+                                </svg>
+                            </div>
+                            <div class="checkbox__title">Default</div>
+                        </div>
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input" checked>
+                        <div class="checkbox__state">
+                            <div class="checkbox__control">
+                                <svg class="checkbox__icon">
+                                    <use xlink:href="../assets/images/sprite.svg#check"></use>
+                                </svg>
+                            </div>
+                            <div class="checkbox__title">Checked</div>
+                        </div>
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input" disabled>
+                        <div class="checkbox__state">
+                            <div class="checkbox__control">
+                                <svg class="checkbox__icon">
+                                    <use xlink:href="../assets/images/sprite.svg#check"></use>
+                                </svg>
+                            </div>
+                            <div class="checkbox__title">Disabled</div>
+                        </div>
+                    </label>
+                </div>
+                <div class="checkbox-group .checkbox-group_lg-gap">
+                    <label class="radio-button">
+                        <input type="radio" class="radio-button__input" name="radio">
+                        <div class="radio-button__state">
+                            <div class="radio-button__control">
+                                <div class="radio-button__inner"></div>
+                            </div>
+                            <div class="radio-button__title">Default</div>
+                        </div>
+                    </label>
+                    <label class="radio-button">
+                        <input type="radio" class="radio-button__input" name="radio" checked>
+                        <div class="radio-button__state">
+                            <div class="radio-button__control">
+                                <div class="radio-button__inner"></div>
+                            </div>
+                            <div class="radio-button__title">Selected</div>
+                        </div>
+                    </label>
+                    <label class="radio-button">
+                        <input type="radio" class="radio-button__input" name="radio" disabled>
+                        <div class="radio-button__state">
+                            <div class="radio-button__control">
+                                <div class="radio-button__inner"></div>
+                            </div>
+                            <div class="radio-button__title">Disabled</div>
+                        </div>
+                    </label>
+                </div>
+                <div class="checkbox-group .checkbox-group_lg-gap">
+                    <label class="toggle">
+                        <input class="toggle__input" type="checkbox">
+                        <div class="toggle__state">
+                            <div class="toggle__control">
+                                <div class="toggle__inner"></div>
+                            </div>
+                            <div class="toggle__title"></div>
+                        </div>
+                    </label>
+                    <label class="toggle">
+                        <input class="toggle__input" type="checkbox" checked>
+                        <div class="toggle__state">
+                            <div class="toggle__control">
+                                <div class="toggle__inner"></div>
+                            </div>
+                            <div class="toggle__title"></div>
+                        </div>
+                    </label>
+                    <label class="toggle">
+                        <input class="toggle__input" type="checkbox" disabled>
+                        <div class="toggle__state">
+                            <div class="toggle__control">
+                                <div class="toggle__inner"></div>
+                            </div>
+                            <div class="toggle__title"></div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <div class="card__grid">
+                <div class="form-group">
+                    <label class="form-group__label" for="input-text">Label</label>
+                    <div class="input form-group__input">
+                        <input class="input__field" type="text" id="input-text" placeholder="Placeholder">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-group__label" for="input-filled">Focus</label>
+                    <div class="input form-group__input">
+                        <input class="input__field" type="text" id="input-filled" value="Filled Input"
+                               placeholder="Placeholder" autofocus>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-group__label" for="input-success">Success</label>
+                    <div class="input form-group__input">
+                        <input class="input__field input__field_success" type="text" id="input-success"
+                               placeholder="Placeholder" value="Success">
+                        <svg class="input__icon">
+                            <use xlink:href="../assets/images/sprite.svg#success"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-group__label" for="input-error">Error</label>
+                    <div class="input form-group__input">
+                        <input class="input__field input__field_invalid" type="text" id="input-error"
+                               placeholder="Placeholder" value="Error">
+                        <svg class="input__icon input__icon_error">
+                            <use xlink:href="../assets/images/sprite.svg#error"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-group__label" for="dropdown">Select</label>
+                    <div class="input form-group__input">
+                        <select id="dropdown" class="input__field input__field_dropdown">
+                            <option class="input__dropdown-item">Dropdown</option>
+                            <option class="input__dropdown-item">Dropdown 2</option>
+                            <option class="input__dropdown-item">Dropdown 3</option>
+                        </select>
+                        <svg class="input__icon">
+                            <use xlink:href="../assets/images/sprite.svg#arrow"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-group__label" for="input-disabled">Disabled</label>
+                    <div class="input form-group__input">
+                        <input class="input__field" type="text" id="input-disabled" value="Disabled Input"
+                               placeholder="Placeholder" disabled>
+                    </div>
+                </div>
+            </div>
+            <div class="card__grid card__grid_3-columns">
+                <button type="button" class="button button_primary">Primary</button>
+                <button type="button" class="button button_secondary">Secondary</button>
+                <button type="button" class="button button_alternate">Alternate</button>
+
+                <button type="button" class="button button_primary" disabled>Primary</button>
+                <button type="button" class="button button_secondary" disabled>Secondary</button>
+                <button type="button" class="button button_alternate" disabled>Alternate</button>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="page__box">
+        <h2 class="footer__title">Reusable component library</h2>
+    </div>
+</footer>
+
+</body>
+</html>

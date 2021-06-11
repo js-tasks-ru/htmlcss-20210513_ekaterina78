@@ -1,5 +1,5 @@
 (function () {
-    const barsCount = Math.floor(Math.random() * 51);
+    const barsCount = Math.floor(Math.random() * 31 + 15);
     for(let i = 0; i < barsCount; i++) {
         const bar = document.createElement('div');
         const bar2 = document.createElement('div');
