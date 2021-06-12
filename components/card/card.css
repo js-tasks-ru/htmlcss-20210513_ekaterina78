@@ -5,7 +5,7 @@
     align-items: center;
     box-sizing: border-box;
     padding: 2rem 1.56rem;
-    background: var(--white);
+    background: var(--bg-accent);
     box-shadow: 0 2px 4px rgba(33, 36, 41, 0.05);
     border-radius: 12px;
     text-decoration: none;
@@ -27,7 +27,7 @@
 }
 
 .card__title {
-    color: var(--black);
+    color: var(--font-color);
     margin: 1.56rem 0 0.375rem 0;
     font-weight: 500;
     font-size: 1.313rem;

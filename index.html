@@ -17,13 +17,32 @@
                    </svg>
                </div>
                <div class="header__logo">
-                   <img src="assets/images/logo.svg" alt="logotype">
+                   <svg class="header__logo-icon">
+                       <use xlink:href="./assets/images/sprite.svg#logo"></use>
+                   </svg>
                </div>
-                <nav class="header__nav">
+                <div class="header__nav">
                     <a href="" class="header__nav-link header__nav-link_selected">Components</a>
                     <a href="" class="header__nav-link">About</a>
                     <a href="" class="header__nav-link">Contact</a>
-                </nav>
+                    <div class="header__theme theme">
+                        <svg class="theme__icon">
+                            <use xlink:href="./assets/images/sprite.svg#sun"></use>
+                        </svg>
+                        <label class="toggle theme-switch">
+                            <input class="toggle__input" type="checkbox">
+                            <div class="toggle__state">
+                                <div class="toggle__control">
+                                    <div class="toggle__inner"></div>
+                                </div>
+                                <div class="toggle__title toggle__title_hidden"></div>
+                            </div>
+                        </label>
+                        <svg class="theme__icon">
+                            <use xlink:href="./assets/images/sprite.svg#moon"></use>
+                        </svg>
+                    </div>
+                </div>
             </div>
             <div class="page__box">
                 <h1 class="header__title">Reusable component library</h1>
@@ -485,5 +504,6 @@
 
 
         <script src="./04-lection2/01-histogram/histogram.js"></script>
+        <script src="./10-lection8/01-theme-changer/theme-changer.js"></script>
     </body>
 </html>

@@ -12,11 +12,12 @@
     font-style: normal;
     font-weight: normal;
     line-height: 1rem;
-    color: var(--black);
+    color: var(--font-color-accent);
     padding: 0 3.5rem 0 1.5rem;
     text-overflow: ellipsis;
     box-sizing: border-box;
     appearance: none;
+    background: var(--bg-accent);
 }
 
 .input__field_preview {
@@ -39,7 +40,7 @@
 }
 
 .input__field::placeholder {
-    color: var(--grey-2);
+    color: var(--disabled);
 }
 
 .input__field:not([disabled]):hover, .input__field:focus {

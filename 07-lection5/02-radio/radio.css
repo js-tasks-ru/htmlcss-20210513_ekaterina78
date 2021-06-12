@@ -27,7 +27,7 @@
 .radio-button__control {
     width: 1.75rem;
     height: 1.75rem;
-    background: var(--white);
+    background: var(--bg-accent);
     border: 1px solid var(--grey-2);
     box-sizing: border-box;
     border-radius: 50%;
@@ -68,11 +68,12 @@
 }
 
 .radio-button__input:disabled ~ .radio-button__state .radio-button__control {
-    background: var(--grey-2);
+    background: var(--disabled);
+    border: var(--disabled);
 }
 
 .radio-button__input:disabled ~ .radio-button__state .radio-button__title {
-    color: var(--grey-2);
+    color: var(--disabled);
 }
 
 @media screen and (min-width: 768px) {

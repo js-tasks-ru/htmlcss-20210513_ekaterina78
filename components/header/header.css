@@ -2,6 +2,11 @@
     padding-top: 17px;
     padding-bottom: 2.5rem;
     grid-area: header;
+    background: var(--bg-accent);
+}
+
+.header_template {
+    background: var(--bg);
 }
 
 .header__title {
@@ -12,6 +17,7 @@
     line-height: 2.375rem;
     margin: 0;
     padding-top: 2.5rem;
+    color: var(--font-color);
 }
 
 .header__container {
@@ -35,6 +41,16 @@
 
 .header__logo {
     flex-grow: 1;
+    color: var(--font-color-accent);
+}
+
+.header__logo_template {
+    color: var(--black);
+}
+
+.header__logo-icon {
+    height: 32px;
+    width: 110px;
 }
 
 .header__nav {
@@ -54,7 +70,11 @@
 }
 
 .header__nav-link_selected {
-    color: var(--black);
+    color: var(--font-color-accent);
+}
+
+.header__theme {
+    padding-left: 3.5rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -62,7 +82,7 @@
         justify-content: space-between;
     }
     .header__nav {
-        display: block;
+        display: flex;
     }
     .header__menu {
         display: none;

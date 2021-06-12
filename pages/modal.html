@@ -10,20 +10,39 @@
 </head>
 <body class="page">
 
-<header class="header">
+<header class="header header_template">
     <div class="page__box header__container">
         <div class="header__menu">
             <svg class="header__icon">
                 <use xlink:href="../assets/images/sprite.svg#menu"></use>
             </svg>
         </div>
-        <div class="header__logo">
-            <img src="../assets/images/logo.svg" alt="logotype">
-        </div>
+        <a href="../index.html" class="header__logo header__logo_template">
+            <svg class="header__logo-icon">
+                <use xlink:href="../assets/images/sprite.svg#logo"></use>
+            </svg>
+        </a>
         <nav class="header__nav">
             <a href="" class="header__nav-link header__nav-link_selected">Components</a>
             <a href="" class="header__nav-link">About</a>
             <a href="" class="header__nav-link">Contact</a>
+            <div class="header__theme theme">
+                <svg class="theme__icon">
+                    <use xlink:href="../assets/images/sprite.svg#sun"></use>
+                </svg>
+                <label class="toggle theme-switch">
+                    <input class="toggle__input" type="checkbox">
+                    <div class="toggle__state">
+                        <div class="toggle__control">
+                            <div class="toggle__inner"></div>
+                        </div>
+                        <div class="toggle__title toggle__title_hidden"></div>
+                    </div>
+                </label>
+                <svg class="theme__icon">
+                    <use xlink:href="../assets/images/sprite.svg#moon"></use>
+                </svg>
+            </div>
         </nav>
     </div>
 </header>
@@ -208,11 +227,12 @@
     </div>
 </main>
 
-<footer class="footer">
+<footer class="footer footer_template">
     <div class="page__box">
-        <h2 class="footer__title">Reusable component library</h2>
+        <h2 class="footer__title footer__title_template">Reusable component library</h2>
     </div>
 </footer>
 <script src="../05-lection3/02-modal/index.js"></script>
+<script src="../10-lection8/01-theme-changer/theme-changer.js"></script>
 </body>
 </html>

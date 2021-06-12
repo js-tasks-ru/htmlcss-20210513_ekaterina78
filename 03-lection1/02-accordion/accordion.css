@@ -32,7 +32,7 @@
 .accordion__summary, .accordion__content {
     font-family: Inter, sans-serif;
     font-style: normal;
-    color: var(--black, #212429);
+    color: var(--font-color);
 }
 
 .accordion__summary::-webkit-details-marker {  /* нестандартный псевдоэлемент Google Chrome */

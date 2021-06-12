@@ -1,17 +1,36 @@
 .footer {
     text-align: center;
     padding: 1.5rem;
+    background: var(--bg-accent);
+}
+
+.footer_template {
+    height: 130px;
+    box-sizing: border-box;
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    background: var(--bg);
 }
 
 .footer__title, .footer__info {
     font-family: Inter, sans-serif;
     font-style: normal;
+    color: var(--font-color);
 }
 
 .footer__title {
     font-weight: 500;
     font-size: 2.375rem;
     line-height: 3rem;
+}
+
+.footer__title_template {
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--grey-3);
 }
 
 .footer__info {

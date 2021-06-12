@@ -41,7 +41,7 @@
 .checkbox__control {
     width: 1.75rem;
     height: 1.75rem;
-    background: var(--white);
+    background: var(--bg-accent);
     border: 1px solid var(--grey-2);
     box-sizing: border-box;
     border-radius: 4px;
@@ -71,11 +71,12 @@
 }
 
 .checkbox__input:disabled ~ .checkbox__state .checkbox__control {
-    background: var(--grey-2);
+    background: var(--disabled);
+    border: var(--disabled);
 }
 
 .checkbox__input:disabled ~ .checkbox__state .checkbox__title {
-    color: var(--grey-2);
+    color: var(--disabled);
 }
 
 @media screen and (min-width: 768px) {

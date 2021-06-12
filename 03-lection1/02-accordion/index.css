@@ -20,7 +20,7 @@ body {
 .accordion-card__title {
     font-family: Inter, sans-serif;
     font-style: normal;
-    color: var(--black, #212429);
+    color: var(--font-color);
     font-weight: 500;
     font-size: 38px;
     line-height: 46px;

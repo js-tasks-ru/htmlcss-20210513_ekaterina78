@@ -42,6 +42,10 @@
     content: 'Off';
 }
 
+.toggle__title_hidden {
+    display: none;
+}
+
 .toggle__inner {
     position: absolute;
     top: 50%;

@@ -1,0 +1,10 @@
+.theme {
+    display: flex;
+    gap: 1rem;
+}
+
+.theme__icon {
+    color: var(--grey-3);
+    width: 1.5rem;
+    height: 1.5rem;
+}
