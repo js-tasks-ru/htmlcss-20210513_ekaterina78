@@ -13,15 +13,54 @@
 <header class="header header_template">
     <div class="page__box header__container">
         <div class="header__menu">
-            <svg class="header__icon">
-                <use xlink:href="../assets/images/sprite.svg#menu"></use>
-            </svg>
+            <input type="checkbox" class="checkbox__input checkbox__input_menu" id="burger-menu">
+            <label class="checkbox" for="burger-menu">
+                <svg class="header__icon">
+                    <use xlink:href="../assets/images/sprite.svg#menu"></use>
+                </svg>
+            </label>
+            <label class="checkbox" for="burger-menu">
+                <svg class="header__icon header__icon_close">
+                    <use xlink:href="../assets/images/sprite.svg#close"></use>
+                </svg>
+            </label>
+            <nav class="menu menu_burger">
+                <hr class="divider divider_burger">
+                <div class="theme theme_burger">
+                    <div class="menu__section-title">Dark mode</div>
+                    <label class="toggle theme-switch">
+                        <input class="toggle__input" type="checkbox">
+                        <div class="toggle__state">
+                            <div class="toggle__control">
+                                <div class="toggle__inner"></div>
+                            </div>
+                            <div class="toggle__title toggle__title_hidden"></div>
+                        </div>
+                    </label>
+                </div>
+                <div class="menu__section">
+                    <hr class="divider divider_burger">
+                    <h2 class="menu__section-title">Elements</h2>
+                    <a class="menu__item menu__item_selected" href="./avatar.html">Avatar</a>
+                    <a class="menu__item" href="./form-elements.html">Custom form elements</a>
+                    <a class="menu__item" href="./histogram-tpl.html">Histogram</a>
+                </div>
+                <div class="menu__section">
+                    <hr class="divider divider_burger">
+                    <h2 class="menu__section-title">Containers</h2>
+                    <a class="menu__item" href="./calendar.html">Calendar</a>
+                    <a class="menu__item" href="./modal.html">Modal dialog</a>
+                    <a class="menu__item" href="./tooltip.html">Tooltip</a>
+                </div>
+            </nav>
         </div>
-        <a href="../index.html" class="header__logo header__logo_template">
-            <svg class="header__logo-icon">
-                <use xlink:href="../assets/images/sprite.svg#logo"></use>
-            </svg>
-        </a>
+        <div class="header__logo header__logo_template">
+            <a href="../index.html">
+                <svg class="header__logo-icon header__logo-icon_template">
+                    <use xlink:href="../assets/images/sprite.svg#logo"></use>
+                </svg>
+            </a>
+        </div>
         <nav class="header__nav">
             <a href="" class="header__nav-link header__nav-link_selected">Components</a>
             <a href="" class="header__nav-link">About</a>
@@ -61,15 +100,6 @@
             <a class="menu__item" href="./modal.html">Modal dialog</a>
             <a class="menu__item" href="./tooltip.html">Tooltip</a>
         </div>
-<!--        <div class="menu__section">-->
-<!--            <h2 class="menu__section-title">Templates</h2>-->
-<!--            <a class="menu__item" href="">Avatar</a>-->
-<!--            <a class="menu__item" href="">Custom form elements</a>-->
-<!--            <a class="menu__item" href="">Button</a>-->
-<!--            <a class="menu__item" href="">Avatar</a>-->
-<!--            <a class="menu__item" href="">Custom form elements</a>-->
-<!--            <a class="menu__item" href="">Button</a>-->
-<!--        </div>-->
     </nav>
     <div class="component">
         <div class="component__title">Custom form elements</div>

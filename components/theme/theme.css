@@ -3,6 +3,12 @@
     gap: 1rem;
 }
 
+.theme_burger {
+    justify-content: space-between;
+    height: 4rem;
+    align-items: center;
+}
+
 .theme__icon {
     color: var(--grey-3);
     width: 1.5rem;

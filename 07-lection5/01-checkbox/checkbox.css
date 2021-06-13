@@ -79,6 +79,22 @@
     color: var(--disabled);
 }
 
+.checkbox__input_menu:checked ~ .checkbox {
+    display: none;
+}
+
+.checkbox__input_menu ~.checkbox + .checkbox {
+    display: none;
+}
+
+.checkbox__input_menu:checked ~.checkbox + .checkbox {
+    display: block;
+}
+
+.checkbox__input_menu:checked ~ .menu_burger {
+    transform: translateX(0);
+}
+
 @media screen and (min-width: 768px) {
     .checkbox__title {
         font-size: 1rem;

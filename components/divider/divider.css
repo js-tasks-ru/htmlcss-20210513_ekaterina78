@@ -7,6 +7,11 @@
     margin-right: -2rem;
 }
 
+.divider_burger {
+    width: 100%;
+    margin: 0;
+}
+
 @media screen and (min-width: 768px) {
     .divider {
         margin-left: -3rem;
