@@ -54,18 +54,6 @@
     animation: pulse 0.3s;
 }
 
-@keyframes pulse {
-    0% {
-        box-shadow: 0 0 0 0 var(--primary-lighten);
-    }
-    70% {
-        box-shadow: 0 0 0 0.5rem var(--primary-lighten);
-    }
-    100% {
-        box-shadow: 0 0 0 1rem var(--primary-lighten);
-    }
-}
-
 .checkbox__input:checked ~ .checkbox__state .checkbox__icon {
     display: block;
 }
@@ -73,11 +61,6 @@
 .checkbox__input:focus ~ .checkbox__state .checkbox__title {
     text-decoration: underline;
 }
-
-/*.checkbox__input:focus ~ .checkbox__state .checkbox__control*/
-/*.checkbox__input:not([disabled]):hover ~ .checkbox__state .checkbox__control {*/
-/*    box-shadow: 0 0 0 0.4rem var(--primary-lighten);*/
-/*}*/
 
 .checkbox__input:disabled ~ .checkbox__state {
     pointer-events: none;

@@ -1,5 +1,6 @@
 /*@import '../../node_modules/normalize.css/normalize.css';*/
 @import '../resets/normalize.css';
+@import '../animation/animation.css';
 @import '../fonts/fonts.css';
 @import '../../components/header/header.css';
 @import '../../components/page/page.css';
