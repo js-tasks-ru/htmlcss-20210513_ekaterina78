@@ -11,6 +11,7 @@
 @import '../../components/theme/theme.css';
 @import '../../03-lection1/01-button/button.css';
 @import '../../04-lection2/01-histogram/histogram.css';
+@import '../../04-lection2/02-skeleton/skeleton.css';
 @import '../../05-lection3/02-modal/modal.css';
 @import '../../05-lection3/03-calendar/calendar.css';
 @import '../../05-lection3/01-tooltip/tooltip.css';
@@ -78,13 +79,14 @@
     --bg: #495057;
     --bg-accent: #212429;
     --bg-transparent: hsla(210, 9%, 31%, 0.5);
+    --disabled: #7F8387;
 
     --grey-1: var(--bg);
     --grey-4: var(--font-color);
+    --grey-5: var(--disabled);
     --grey-6: var(--font-color);
     --grey-7: var(--font-color);
 
-    --disabled: #7F8387;
 }
 
 * {

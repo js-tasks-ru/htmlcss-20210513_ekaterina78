@@ -54,6 +54,7 @@
     height: 1.5rem;
     background: var(--grey-2);
     border-radius: 50%;
+    transition: transform 0.3s cubic-bezier(.42, .97, .52, 1.49);
 }
 
 .toggle__input:checked ~ .toggle__state .toggle__control {
@@ -66,7 +67,7 @@
 }
 
 .toggle__input:checked ~ .toggle__state .toggle__inner {
-    right: calc(0.1rem + 1px);
+    transform: translate(100%, -50%);
     background: var(--white);
 }
 
@@ -87,8 +88,8 @@
     opacity: 0.5;
 }
 
-.toggle__input:focus ~ .toggle__state .toggle__control,
-.toggle__input:not([disabled]):hover ~ .toggle__state .toggle__control {
+.toggle__input:focus ~ .toggle__state .toggle__control
+/*.toggle__input:not([disabled]):hover ~ .toggle__state .toggle__control*/ {
     box-shadow: 0 0 0 0.4rem var(--primary-lighten);
 }
 
