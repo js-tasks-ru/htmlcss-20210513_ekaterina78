@@ -17,6 +17,7 @@
     padding: 1.5rem;
     box-sizing: border-box;
     z-index: 2;
+    overflow: auto;
 }
 
 .menu_burger-main {
