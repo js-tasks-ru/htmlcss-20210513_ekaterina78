@@ -4,6 +4,26 @@
     grid-area: menu;
 }
 
+.menu_burger {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: calc(100% - 6rem);
+    background: var(--bg);
+    transform: translateX(-100vw);
+    transition: transform 0.2s ease-in-out;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    z-index: 2;
+    overflow: auto;
+}
+
+.menu_burger-main {
+    background: var(--bg-accent);
+}
+
 .menu__section {
     display: flex;
     flex-direction: column;
@@ -13,6 +33,7 @@
     font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: 400;
+    color: var(--font-color);
 }
 
 .menu__section-title {
@@ -21,10 +42,9 @@
 }
 
 .menu__item {
-    font-size: 0.875rem;
-    line-height: 1.375rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
     margin-bottom: 4px;
-    color: var(--black);
     text-decoration: none;
 }
 
@@ -39,5 +59,8 @@
 @media screen and (min-width: 768px) {
     .menu {
         display: block;
+    }
+    .menu_burger {
+        display: none;
     }
 }

@@ -1,0 +1,11 @@
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 var(--primary-lighten);
+    }
+    70% {
+        box-shadow: 0 0 0 0.5rem var(--primary-lighten);
+    }
+    100% {
+        box-shadow: 0 0 0 1rem var(--primary-lighten);
+    }
+}

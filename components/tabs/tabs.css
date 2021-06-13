@@ -15,6 +15,7 @@
 
 .tabs__content{
     display: none;
+    color: var(--font-color);
 }
 
 #all-tabs:checked ~ .page__box .tabs__content_all-tabs,
@@ -86,8 +87,8 @@
 #modal-css:focus ~ .tabs__scroller .tabs__label[for="modal-css"],
 #modal-html:hover ~ .tabs__scroller .tabs__label[for="modal-html"],
 #modal-css:hover ~ .tabs__scroller .tabs__label[for="modal-css"] {
-    color: var(--black);
-    border-color: var(--black);
+    color: var(--font-color-accent);
+    border-color: var(--font-color-accent);
 }
 
 #all-tabs:focus ~ .tabs__scroller .tabs__label[for="all-tabs"],
@@ -113,7 +114,7 @@
 }
 
 .tabs__scroller {
-    background: var(--white);
+    background: var(--bg-accent);
 }
 
 .tabs__label-container {

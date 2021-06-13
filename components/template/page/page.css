@@ -3,7 +3,7 @@
     display: grid;
     grid-template-rows: auto 1fr auto;
     grid-template-areas: "header" "main-section" "footer";
-    background: var(--grey-5);
+    background: var(--bg);
 }
 
 @media screen and (min-width: 768px) {

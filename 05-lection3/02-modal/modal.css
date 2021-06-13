@@ -5,7 +5,7 @@
     width: 100%;
     height: 100%;
     position: fixed;
-    background-color: rgba(196, 196, 196, 0.5);
+    background-color: var(--bg-transparent);
     z-index: 999;
 }
 
@@ -17,7 +17,7 @@
     position: absolute;
     transform: translate(-50%, -50%);
     border-radius: 8px;
-    background: var(--white);
+    background: var(--bg-accent);
     display: grid;
     gap: 2.5rem;
     padding: 0 0 2.5rem 2.5rem;
@@ -35,7 +35,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--black);
+    color: var(--font-color);
 }
 
 .modal__close-button:focus {
@@ -62,7 +62,7 @@
     align-self: flex-end;
     font-weight: 600;
     font-size: 20px;
-    color: var(--black);
+    color: var(--font-color);
     margin: 0;
 }
 

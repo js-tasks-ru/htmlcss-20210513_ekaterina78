@@ -66,11 +66,11 @@
     border: 1px solid var(--grey-3);
     box-sizing: border-box;
     color: var(--grey-4);
-    background-color: var(--white);
+    background-color: var(--bg);
 }
 
 .button_alternate:hover {
-    border-color: var(--black);
+    border-color: var(--font-color-accent);
 }
 
 .button_alternate:active {

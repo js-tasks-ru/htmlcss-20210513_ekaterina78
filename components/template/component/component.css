@@ -1,5 +1,5 @@
 .component {
-    background: var(--white);
+    background: var(--bg-accent);
     grid-area: component;
     flex-grow: 1;
     padding: 2rem;

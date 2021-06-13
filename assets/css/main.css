@@ -1,14 +1,18 @@
 /*@import '../../node_modules/normalize.css/normalize.css';*/
 @import '../resets/normalize.css';
+@import '../animation/animation.css';
 @import '../fonts/fonts.css';
 @import '../../components/header/header.css';
 @import '../../components/page/page.css';
 @import '../../components/card/card.css';
 @import '../../components/divider/divider.css';
+@import '../../components/menu/menu.css';
 @import '../../components/preview-flex/preview-flex.css';
 @import '../../components/tabs/tabs.css';
+@import '../../components/theme/theme.css';
 @import '../../03-lection1/01-button/button.css';
 @import '../../04-lection2/01-histogram/histogram.css';
+@import '../../04-lection2/02-skeleton/skeleton.css';
 @import '../../05-lection3/02-modal/modal.css';
 @import '../../05-lection3/03-calendar/calendar.css';
 @import '../../05-lection3/01-tooltip/tooltip.css';
@@ -34,11 +38,18 @@
     --grey-4: #495057;
     --grey-5: #F9FAFC;
     --grey-6: #334D6E;
+    --grey-7: #90A0B7;
+
+    --font-color: var(--black);
+    --font-color-accent: var(--black);
 
     --error: var(--red);
     --success: var(--blue);
+    --disabled: var(--grey-2);
 
     --bg: var(--grey-5);
+    --bg-accent: var(--white);
+    --bg-transparent: hsla(0, 0%, 77%, 0.5);
 
     --notification: #D84910;
 
@@ -59,6 +70,24 @@
     --pink-s: 88%;
     --pink-l: 74%;
     --pink-lighten: hsla(var(--pink-h), var(--pink-s), var(--pink-l), 0.2);
+}
+
+[data-theme="dark"] {
+    --white: #F8F9FA;
+    --font-color: #ffffff75;
+    --font-color-accent: var(--white);
+
+    --bg: #495057;
+    --bg-accent: #212429;
+    --bg-transparent: hsla(210, 9%, 31%, 0.5);
+    --disabled: #7F8387;
+
+    --grey-1: var(--bg);
+    --grey-4: var(--font-color);
+    --grey-5: var(--disabled);
+    --grey-6: var(--font-color);
+    --grey-7: var(--font-color);
+
 }
 
 * {
@@ -83,4 +112,8 @@ html {
 
 body {
     font-size: 1rem;
+}
+
+.preload * {
+    transition: none !important;
 }
