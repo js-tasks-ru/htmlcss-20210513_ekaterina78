@@ -10,7 +10,7 @@
     bottom: 0;
     left: 0;
     width: 100vw;
-    height: calc(100vh - 6rem);
+    height: calc(100% - 6rem);
     background: var(--bg);
     transform: translateX(-100vw);
     transition: transform 0.2s ease-in-out;
